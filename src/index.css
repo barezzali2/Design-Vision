@@ -21,3 +21,16 @@ body {
   background-size: cover;
   color: white;
 }
+
+
+
+@keyframes updown {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(15px); /* increase this for more bounce */
+  }
+}
