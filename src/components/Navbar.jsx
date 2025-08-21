@@ -9,7 +9,7 @@ function Navbar() {
         setMenuOpen((prev) => !prev);
     }
   return (
-    <div className='flex flex-row overflow-hidden fixed top-0 w-full flex-wrap items-center justify-around '>
+    <div className='flex flex-row backdrop-blur-sm bg-[#1220301f] overflow-hidden sticky top-0 w-full z-11 flex-wrap items-center justify-around mb-[15%]'>
             <Logo />
 
             <div className='w-40'></div>
@@ -40,7 +40,7 @@ function Navbar() {
 
 
         
-        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-400 ease-in-out text-center gap-8  ${menuOpen ? 'h-[310px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
+        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8  ${menuOpen ? 'h-[310px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
             <li>
                 <NavLink 
                 to="/"
