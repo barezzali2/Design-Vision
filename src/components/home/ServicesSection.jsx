@@ -10,7 +10,7 @@ const services = [
     bg: "from-[#4f3f99]/80 via-[#181c64]/90 to-[#26a8df]/80"
   },
   {
-    title: "UI/UX Design",
+    title: "UX/UI Design",
     icon: "🎨",
     description: "Crafting intuitive and beautiful user experiences for web and mobile platforms.",
     bg: "from-[#4b0d00]/80 via-[#311c24]/90 to-[#002066]/80"

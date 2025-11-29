@@ -9,10 +9,58 @@ function Navbar() {
         setMenuOpen((prev) => !prev);
     }
   return (
-    <div className='flex flex-row backdrop-blur-sm bg-[#1220301f] overflow-hidden sticky top-0 w-full z-11 flex-wrap items-center justify-around mb-[15%]'>
+    <div className='flex flex-row backdrop-blur-sm bg-[#1220301f] overflow-hidden sticky top-0 w-full z-11 flex-wrap items-center justify-around mb-[15%] md:mb-[7%]'>
             <Logo />
 
-            <div className='w-40'></div>
+            <div className='w-40 md:w-0'></div>
+
+
+            <ul className='hidden md:list-none md:flex md:flex-row md:gap-15'>
+                <li>
+                <NavLink 
+                to="/"
+                className="text-xl font-semibold text-white transition-colors"
+                >
+                    HOME
+                </NavLink>
+                </li>
+
+                <li>
+                    <NavLink 
+                    to="/services"
+                    className="text-xl font-semibold text-white transition-colors"
+                    >
+                        SERVICES
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink 
+                    to="/projects"
+                    className="text-xl font-semibold text-white transition-colors"
+                    >
+                        PROJECTS
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink 
+                    to="/about"
+                    className="text-xl font-semibold text-white transition-colors"
+                    >
+                        ABOUT US
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink 
+                    to="/contact"
+                    className="text-xl font-semibold text-white transition-colors"
+                    >
+                        CONTACT
+                    </NavLink>
+                </li>
+            </ul>
 
 
             <div
@@ -40,7 +88,7 @@ function Navbar() {
 
 
         
-        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8  ${menuOpen ? 'h-[310px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
+        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 ${menuOpen ? 'h-[310px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
             <li>
                 <NavLink 
                 to="/"

@@ -57,7 +57,7 @@ function HeroSection() {
 
            
 
-            <div className='mb-20 mx-11'>
+            <div className='mb-20 mx-11 md:mx-95'>
               <p>We blend creativity with cutting-edge technology to craft digital experiences 
                 that captivate, engage, and inspire. From concept to creation, every project 
                 is a journey of innovation and artistic excellence.
