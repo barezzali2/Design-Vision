@@ -15,11 +15,12 @@ function Navbar() {
             <div className='w-40 md:w-0'></div>
 
 
+            {/* Tablet/Large screen navbar */}
             <ul className='hidden md:list-none md:flex md:flex-row md:gap-15'>
                 <li>
                 <NavLink 
                 to="/"
-                className="text-xl font-semibold text-white transition-colors"
+                className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
                 >
                     HOME
                 </NavLink>
@@ -28,7 +29,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/services"
-                    className="text-xl font-semibold text-white transition-colors"
+                    className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
                     >
                         SERVICES
                     </NavLink>
@@ -37,7 +38,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/projects"
-                    className="text-xl font-semibold text-white transition-colors"
+                    className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
                     >
                         PROJECTS
                     </NavLink>
@@ -46,7 +47,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/about"
-                    className="text-xl font-semibold text-white transition-colors"
+                    className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
                     >
                         ABOUT US
                     </NavLink>
@@ -55,7 +56,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/contact"
-                    className="text-xl font-semibold text-white transition-colors"
+                    className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
                     >
                         CONTACT
                     </NavLink>
@@ -63,6 +64,7 @@ function Navbar() {
             </ul>
 
 
+            {/* Hambergur button */}
             <div
             onClick={handleSetMenu}
             className="relative w-[30px] h-[25px] flex flex-col justify-center items-center cursor-pointer md:hidden z-[1002]"
@@ -88,7 +90,8 @@ function Navbar() {
 
 
         
-        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 ${menuOpen ? 'h-[310px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
+        {/* Small screen navbar */}
+        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 md:hidden ${menuOpen ? 'h-[310px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
             <li>
                 <NavLink 
                 to="/"

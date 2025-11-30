@@ -5,23 +5,23 @@ function HeroSection() {
   const currentRef = useRef(null);
 
   return (
-    <div className='mt-20 mb-20 md:mt-11'>
+    <div className='mt-20 mb-20 lg:mt-11'>
 
       {/* FLEX ROW: LEFT TEXT / RIGHT IMAGE --- */}
-      <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20">
+      <div className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20">
 
         {/* LEFT SIDE: Title + Logo */}
         <motion.div
-          className="w-full md:w-1/2 text-center"
+          className="w-full lg:w-1/2 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.1 }}
         >
-          <h2 className='text-2xl mb-3 md:text-4xl md:mb-7'>Turn Your Vision</h2>
+          <h2 className='text-2xl mb-3 lg:text-4xl lg:mb-7'>Turn Your Vision</h2>
 
           <motion.h2
-            className="text-4xl font-semibold bg-clip-text text-transparent md:text-6xl"
+            className="text-4xl font-semibold bg-clip-text text-transparent lg:text-6xl"
             style={{
               backgroundImage: 'linear-gradient(90deg, #f7941f, #f7941f, #eb1d25, #4f3f99, #003366, #26a8df)',
               backgroundSize: '150% auto',
@@ -43,7 +43,7 @@ function HeroSection() {
           <motion.img
             src="/assets/name.png"
             alt="name"
-            className='w-64 mt-10 mx-auto md:w-120 md:mt-15'
+            className='w-64 mt-10 mx-auto lg:w-120 lg:mt-15'
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, type: "tween", ease: "easeOut" }}
@@ -54,7 +54,7 @@ function HeroSection() {
         <motion.img
           src="/assets/homeimg.png"
           alt="homeimg"
-          className='w-80 mt-10 md:mt-0 md:w-[380px] mx-auto'
+          className='w-80 mt-10 lg:mt-0 lg:w-[380px] mx-auto'
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, type: "tween", ease: "easeOut" }}
@@ -63,7 +63,7 @@ function HeroSection() {
       </div>
 
       {/* Description */}
-      <div className='mb-20 mx-11 mt-14 text-center md:mx-90 md:text-xl md:text-center'>
+      <div className='mb-20 mx-11 mt-14 text-center lg:mx-90 lg:text-xl lg:text-center'>
         <p>
           We blend creativity with cutting-edge technology to craft digital experiences
           that captivate, engage, and inspire. From concept to creation, every project
