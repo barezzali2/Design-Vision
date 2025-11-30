@@ -16,7 +16,7 @@ function Contact() {
       transition={{ duration: 1.1 }}
       >
         <h1 className="text-[25px] md:text-4xl font-semibold mb-6">
-          Do not Hesitate Contact Us
+          Do not Hesitate, Contact Us
         </h1>
 
         <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
