@@ -19,14 +19,20 @@ function About() {
           communicate clearly and effectively.
         </p>
 
+
+        <div className="md:flex md:justify-between md:text-center ">
+          
+        <div>
         <h2 className="text-2xl font-semibold mb-4 mt-20">What We Do</h2>
-        <p className="text-gray-500 max-w-2xl leading-relaxed mb-8 mx-auto">
+        <p className="text-gray-500 md:max-w-90 leading-relaxed mb-8 mx-auto">
           We specialize in visual identity, web design, and digital
-          storytelling. We believe good design is not only about looks — it
+          storytelling. We believe good design is not only about looks, rather it
           should solve a problem, deliver a message, and create a lasting
           impression.
         </p>
+        </div>
 
+        <div>
         <h2 className="text-2xl font-semibold mb-4 mt-15">Our Values</h2>
         <ul className="text-gray-500 space-y-2">
           <li>• Simple and clean design</li>
@@ -34,6 +40,10 @@ function About() {
           <li>• Creativity with purpose</li>
           <li>• Working closely with clients</li>
         </ul>
+        </div>
+
+        </div>
+
       </div>
 
       <Footer />

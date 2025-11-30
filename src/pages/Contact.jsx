@@ -19,9 +19,9 @@ function Contact() {
         </p>
 
         <div className="max-w-2xl mx-auto text-gray-500 space-y-4">
-          <p><span className="font-semibold">Email:</span> info@designvision.agency</p>
-          <p><span className="font-semibold">Phone:</span> +964 770 000 0000</p>
-          <p><span className="font-semibold">Location:</span> Sulaymaniyah, Kurdistan Region, Iraq</p>
+          <p><span className="font-semibold">Email: </span><a href="#">info@designvision.agency</a></p>
+          <p><span className="font-semibold">Phone: </span> <a href="#">+964 772 542 0063</a></p>
+          <p><span className="font-semibold">Location: </span>Sulaymaniyah, Kurdistan Region, Iraq</p>
         </div>
 
         <h2 className="text-2xl font-semibold mt-12 mb-4">Send Us a Message</h2>
