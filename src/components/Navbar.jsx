@@ -9,7 +9,7 @@ function Navbar() {
         setMenuOpen((prev) => !prev);
     }
   return (
-    <div className='flex flex-row backdrop-blur-sm bg-[#1220301f] overflow-hidden sticky top-0 w-full z-11 flex-wrap items-center justify-around mb-[15%] md:mb-[0%]'>
+    <div className='flex flex-row backdrop-blur-sm bg-[#1220301f] overflow-hidden sticky top-0 w-full z-11 flex-wrap items-center justify-around mb-[15%] md:mb-[5%]'>
             <Logo />
 
             <div className='w-40 md:w-0'></div>

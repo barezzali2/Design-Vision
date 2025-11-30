@@ -47,7 +47,7 @@ const projects = [
 function ProjectsSection() {
   return (
      <motion.div 
-        className="w-[94%] max-w-6xl mx-auto mt-20 px-4"
+        className="w-[94%] max-w-6xl mx-auto px-4"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
