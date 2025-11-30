@@ -58,7 +58,7 @@ function Navbar() {
                     to="/contact"
                     className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
                     >
-                        CONTACT
+                    CONTACT
                     </NavLink>
                 </li>
             </ul>
