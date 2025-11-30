@@ -48,7 +48,8 @@ function Footer() {
         <div className="mb-12 px-7 md:w-1/2 md:pl-8 md:px-0">
           <h2 className="text-2xl font-semibold mb-4 text-white">About Design Vision</h2>
           <p className="text-gray-200 leading-relaxed max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus optio, enim nisi ut, pariatur corporis dignissimos incidunt perspiciatis rerum ipsum repellendus quam eaque labore, blanditiis possimus non voluptatum nesciunt?
+            We’d be happy to connect with you. Whether you’re looking to collaborate, need information, or just want to get in touch, 
+            <br />do not hesitate, you can reach us anytime using the contact details below.
           </p>
         </div>
       </div>
