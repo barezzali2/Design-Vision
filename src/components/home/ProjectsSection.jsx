@@ -55,7 +55,7 @@ function ProjectsSection() {
 
         >
         <div className="text-center mb-8">
-          <h3 className="text-[25px] md:text-4xl font-bold mb-2">Explore Our Projects</h3>
+          <h3 className="text-[25px] md:text-4xl font-bold mb-2 md:mb-4">Explore Our Projects</h3>
           <p className="text-[15px] text-gray-300">
             Discover some of our latest and most creative work.
           </p>

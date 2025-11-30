@@ -119,7 +119,7 @@ function ServicesSection() {
           transition={{ duration: 1.1 }}
           >
           <div className="text-center mb-8">
-            <h3 className="text-[25px] font-bold mb-2">What We Offer</h3>
+            <h3 className="text-[25px] md:text-4xl font-bold mb-2 md:mb-4">What We Offer</h3>
             <p className="text-[15px] text-gray-300">
               See what we offer as a creative team.
             </p>
