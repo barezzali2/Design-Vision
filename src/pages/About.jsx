@@ -1,14 +1,21 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion"
 
 function About() {
   return (
     <div>
       <Navbar />
 
-      <div className="px-6 md:px-20 py-10 text-center mx-7">
-        <h1 className="text-3xl md:text-4xl font-semibold mb-6">
+      <motion.div 
+      className="px-6 md:px-20 text-center mx-7"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.1 }}
+      >
+        <h1 className="text-[25px] md:text-4xl font-semibold mb-6">
           About Our Design Vision Agency
         </h1>
 
@@ -44,7 +51,7 @@ function About() {
 
         </div>
 
-      </div>
+      </motion.div>
 
       <Footer />
     </div>
