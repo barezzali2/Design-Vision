@@ -5,7 +5,7 @@ function HeroSection() {
   const currentRef = useRef(null);
 
   return (
-    <div className='mt-20 mb-20 lg:mt-11'>
+    <div className='mt-20 mb-20 md:mt-12'>
 
       {/* FLEX ROW: LEFT TEXT / RIGHT IMAGE --- */}
       <div className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20">
@@ -55,21 +55,27 @@ function HeroSection() {
           src="/assets/homeimg.png"
           alt="homeimg"
           className='w-80 mt-10 lg:mt-0 lg:w-[380px] mx-auto'
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0, x: 5 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5, type: "tween", ease: "easeOut" }}
+          transition={{ duration: 0.8, type: "tween", ease: "easeOut" }}
         />
 
       </div>
 
       {/* Description */}
-      <div className='mb-20 mx-11 mt-14 text-center lg:mx-90 lg:text-xl lg:text-center'>
+      <motion.div 
+      className='mb-20 mx-11 mt-14 text-center lg:mx-90 lg:text-xl lg:text-center'
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.7 }}
+      >
         <p>
           We blend creativity with cutting-edge technology to craft digital experiences
           that captivate, engage, and inspire. From concept to creation, every project
           is a journey of innovation and artistic excellence.
         </p>
-      </div>
+      </motion.div>
 
       {/* Scroll Down Animation */}
       <motion.div

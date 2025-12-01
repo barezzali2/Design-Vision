@@ -74,7 +74,7 @@ function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-200 pt-8">
+        <div className="border-t border-gray-200 pt-10">
           <p className="text-gray-300 text-sm md:text-[15px]">
             © 2025 DesignVision. All rights reserved.
           </p>
