@@ -64,7 +64,7 @@ function HeroSection() {
 
       {/* Description */}
       <motion.div 
-      className='mb-20 mx-11 mt-14 text-center lg:mx-90 lg:text-xl lg:text-center'
+      className='mb-20 mx-11 mt-14 text-center lg:mx-90 lg:text-xl lg:text-center md:mt-11'
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
