@@ -9,7 +9,7 @@ function Contact() {
       <Navbar />
 
       <motion.div 
-      className="px-6 md:px-20 text-center mx-7"
+      className="px-6 md:px-20 text-center mx-7 mt-20 md:mt-15"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
