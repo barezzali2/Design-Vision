@@ -9,7 +9,7 @@ import { SiThreads } from "react-icons/si";
 
 function Footer() {
   return (
-    <footer className="text-center py-10 shadow-[0_-5px_6px_-1px_rgba(0,0,0,0.5)] mt-20">
+    <footer className="text-center py-10 shadow-[0_-11px_9px_0px_rgba(0,0,0,0.5)] mt-20">
       <div className="max-w-6xl mx-auto">
         {/* Contact Section */}
         <div className="mb-10 md:flex md:justify-between md:text-center md:gap-100 md:mb-2">
