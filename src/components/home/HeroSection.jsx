@@ -12,7 +12,7 @@ function HeroSection() {
 
         {/* LEFT SIDE: Title + Logo */}
         <motion.div
-          className="w-full lg:w-1/2 text-center"
+          className="w-full text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -51,14 +51,14 @@ function HeroSection() {
         </motion.div>
 
         {/* RIGHT SIDE: Main Image */}
-        <motion.img
+        {/* <motion.img
           src="/assets/homeimg.png"
           alt="homeimg"
           className='w-80 mt-10 lg:mt-0 lg:w-[380px] mx-auto'
           initial={{ opacity: 0, x: 5 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, type: "tween", ease: "easeOut" }}
-        />
+        /> */}
 
       </div>
 
