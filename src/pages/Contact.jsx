@@ -26,7 +26,7 @@ function Contact() {
 
         <div className="max-w-2xl mx-auto text-gray-500 space-y-4">
           <p><span className="font-semibold">Email: </span><a href="#">info@designvision.agency</a></p>
-          <p><span className="font-semibold">Phone: </span> <a href="#">+964 772 542 0063</a></p>
+          <p><span className="font-semibold">Phone: </span> <a href="#">+964 772 542 0663</a></p>
           <p><span className="font-semibold">Location: </span>Sulaymaniyah, Kurdistan Region, Iraq</p>
         </div>
 
