@@ -108,43 +108,56 @@ const services = [
 // ];
 
 
-
 function ServicesSection() {
   return (
-    <motion.div 
-          className="w-[94%] max-w-6xl mx-auto px-4 mb-40"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.1 }}
+    <div 
+      className="w-[94%] max-w-6xl mx-auto px-4 mb-40"
+    >
+      <div className="text-center mb-8">
+        <h3 className="text-[25px] md:text-4xl font-bold mb-2 md:mb-4">What We Offer</h3>
+        <p className="text-[15px] text-gray-300">
+          See what we offer as a creative team.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {services.map((service, idx) => (
+          <motion.div
+            key={idx}
+            className={`relative rounded-xl shadow-lg p-8 flex flex-col items-center justify-center overflow-hidden group bg-gradient-to-br ${service.bg}`}
+            initial={{ opacity: 0, y: 70, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            whileHover={{ scale: 1.05, y: -5 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ 
+              duration: 0.6,
+              delay: idx * 0.12,
+              ease: [0.25, 0.4, 0.25, 1],
+              scale: { duration: 0.4 },
+            }}
           >
-          <div className="text-center mb-8">
-            <h3 className="text-[25px] md:text-4xl font-bold mb-2 md:mb-4">What We Offer</h3>
-            <p className="text-[15px] text-gray-300">
-              See what we offer as a creative team.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {services.map((service, idx) => (
-              <div
-                key={idx}
-                className={`relative rounded-xl shadow-lg p-8 flex flex-col items-center justify-center overflow-hidden group bg-gradient-to-br ${service.bg} transition-transform hover:scale-105`}
+            {/* Intuitive backdrop effect */}
+            <motion.div 
+              className="absolute inset-0 opacity-30 blur-2xl pointer-events-none"
+              initial={{ opacity: 0.3 }}
+              whileHover={{ opacity: 0.1 }}
+              transition={{ duration: 0.1 }}
+              style={{
+                background: "radial-gradient(circle at 60% 40%, #fff2 0%, transparent 70%)"
+              }}
+            />
+            <div className="relative z-10 flex flex-col items-center">
+              <motion.div 
+                className="text-5xl mb-4"
               >
-                {/* Intuitive backdrop effect */}
-                <div className="absolute inset-0 opacity-30 blur-2xl pointer-events-none group-hover:opacity-50 transition-all"
-                  style={{
-                    background: "radial-gradient(circle at 60% 40%, #fff2 0%, transparent 70%)"
-                  }}
-                />
-                <div className="relative z-10 flex flex-col items-center">
-                  <div className="text-5xl mb-4">{service.icon}</div>
-                  <h4 className="text-xl font-bold mb-2">{service.title}</h4>
-                  <p className="text-gray-200 text-sm">{service.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+                {service.icon}
+              </motion.div>
+              <h4 className="text-xl font-bold mb-2">{service.title}</h4>
+              <p className="text-gray-200 text-sm">{service.description}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
   )
 }
 
