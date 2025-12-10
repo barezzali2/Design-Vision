@@ -92,7 +92,7 @@ function HeroSection() {
             currentRef.current?.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          <h4 className='mb-20 border-1 border-indigo-500 p-5 rounded-2xl text-xl'>
+           <h4 className='mb-20 relative overflow-hidden group px-8 py-4 rounded-full text-xl font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:scale-105 active:scale-95 hover:shadow-[0_0_30px_rgba(168,85,247,0.7),0_0_60px_rgba(168,85,247,0.4)] transition-all duration-500 cursor-pointer before:absolute before:inset-0 before:bg-gradient-to-r before:from-white/0 before:via-white/20 before:to-white/0 before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-600'>
             Get Started
           </h4>
         </a>
