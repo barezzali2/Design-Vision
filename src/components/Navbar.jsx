@@ -91,7 +91,7 @@ function Navbar() {
 
         
         {/* Small screen navbar */}
-        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 md:hidden ${menuOpen ? 'h-[410px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
+        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 md:hidden ${menuOpen ? 'h-[320px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
             <li>
                 <NavLink 
                 to="/"
