@@ -5,7 +5,7 @@ function HeroSection() {
   const currentRef = useRef(null);
 
   return (
-    <div className='mt-20 mb-20 md:mt-12'>
+    <div className='mt-20 mb-20'>
 
       {/* FLEX ROW: LEFT TEXT / RIGHT IMAGE --- */}
       <div className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20">
@@ -18,7 +18,7 @@ function HeroSection() {
           viewport={{ once: true }}
           transition={{ duration: 1.1 }}
         >
-          <h2 className='text-2xl mb-3 lg:text-4xl lg:mb-7'>Turn Your Vision</h2>
+          <h2 className='text-2xl mb-3 lg:text-4xl lg:mb-6'>Turn Your Vision</h2>
 
           <motion.h2
             className="text-4xl font-semibold bg-clip-text text-transparent lg:text-6xl"
@@ -64,7 +64,7 @@ function HeroSection() {
 
       {/* Description */}
       <motion.div 
-      className='mb-20 mx-11 mt-10 text-center lg:mx-90 lg:text-xl lg:text-center'
+      className='mb-20 mx-11 mt-10 text-center lg:mx-90 lg:mb-12 lg:text-xl lg:text-center'
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

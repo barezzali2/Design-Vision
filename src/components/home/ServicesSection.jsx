@@ -113,12 +113,17 @@ function ServicesSection() {
     <div 
       className="w-[94%] max-w-6xl mx-auto px-4 mb-40"
     >
-      <div className="text-center mb-8">
+      <motion.div className="text-center mb-8"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.3 }}
+      >
         <h3 className="text-[25px] md:text-4xl font-bold mb-2 md:mb-4">What We Offer</h3>
         <p className="text-[15px] text-gray-300">
           See what we offer as a creative team.
         </p>
-      </div>
+      </motion.div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {services.map((service, idx) => (
           <motion.div
