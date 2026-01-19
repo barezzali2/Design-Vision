@@ -22,6 +22,11 @@ const projects = [
 function ProjectsSection() {
   const [expanded, setExpanded] = useState(false);
 
+
+  function handleSetExpanded() {
+    setExpanded((expanded) => !expanded);
+  }
+
   const variants = {
     stacked: (i) => ({
       x: 0,
@@ -54,19 +59,46 @@ function ProjectsSection() {
         <h3 className="text-3xl md:text-4xl font-bold mb-4">
           Explore Our Projects
         </h3>
-        <p className="text-gray-400">
+        <p className="hidden lg:block lg:text-gray-400">
           Click the deck to expand the projects
         </p>
         <button
-          onClick={() => setExpanded(!expanded)}
-          className="mt-6 px-6 py-2 bg-indigo-600 rounded-full text-white font-medium hover:bg-indigo-500 transition cursor-pointer"
+          onClick={handleSetExpanded}
+          className="hidden lg:inline mt-6 px-6 py-2 bg-indigo-600 rounded-full text-white font-medium hover:bg-indigo-500 transition cursor-pointer"
         >
           {expanded ? "Reset Stack" : "Expand Deck"}
         </button>
       </div>
 
+
+
+    <div className="lg:hidden w-full px-10 space-y-10">
+        {projects.map((project, idx) => (
+          <motion.div
+            key={idx}
+            className="w-full bg-[#181c24] rounded-xl p-4 border border-gray-800"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="rounded-lg w-full h-32 object-cover mb-4"
+            />
+            <h4 className="text-lg font-bold mb-1">{project.title}</h4>
+            <p className="text-xs text-gray-400 mb-4 line-clamp-2">
+              Innovative design meeting modern functionality.
+            </p>
+            <span className="text-[#26a8df] text-xs font-semibold">
+              VIEW DETAILS →
+            </span>
+          </motion.div>
+        ))}
+      </div>
+
+
+      
+
       {/* Cards */}
-      <div className="relative w-full max-w-6xl h-[400px] flex justify-center items-center">
+      <div className="hidden relative w-full max-w-6xl h-[400px] justify-center items-center lg:inline-flex">
         {projects.map((project, idx) => (
           <motion.div
             key={idx}
@@ -106,6 +138,7 @@ function ProjectsSection() {
           </motion.div>
         ))}
       </div>
+
     </motion.section>
   );
 }

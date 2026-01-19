@@ -111,7 +111,7 @@ const services = [
 function ServicesSection() {
   return (
     <div 
-      className="w-[94%] max-w-6xl mx-auto px-4 mb-40"
+      className="w-[94%] max-w-6xl mx-auto px-6 mb-40"
     >
       <motion.div className="text-center mb-8"
       initial={{ opacity: 0, y: 30 }}
