@@ -48,7 +48,7 @@ function ProjectsSection() {
 
   return (
     <motion.section
-      className="py-20 bg-[#0f1218] min-h-screen overflow-hidden flex flex-col items-center"
+      className="py-20 min-h-screen overflow-hidden flex flex-col items-center"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
