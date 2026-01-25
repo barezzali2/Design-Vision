@@ -10,28 +10,10 @@ const services = [
     bg: "from-[#4f3f99]/80 via-[#181c64]/90 to-[#26a8df]/80"
   },
   {
-    title: "UX/UI Design",
-    icon: "🎨",
-    description: "Crafting intuitive and beautiful user experiences for web and mobile platforms.",
-    bg: "from-[#4b0d00]/80 via-[#311c24]/90 to-[#002066]/80"
-  },
-  {
     title: "Web Development",
     icon: "💻",
     description: "Building fast, responsive, and scalable web applications tailored to your needs.",
     bg: "from-[#003396]/30 via-[#181c44]/90 to-[#26a8df]/65"
-  },
-  {
-    title: "Brand Identity",
-    icon: "🚀",
-    description: "Creating memorable brands with unique logos, colors, and visual guidelines.",
-    bg: "from-[#f7941f]/80 via-[#481c94]/90 to-[#eb1d25]/80"
-  },
-  {
-    title: "Content Creation",
-    icon: "📝",
-    description: "Engaging content for blogs, social media, and marketing campaigns.",
-    bg: "from-[#4f3f99]/80 via-[#181c64]/90 to-[#26a8df]/80"
   },
     {
     title: "Poster Design",
@@ -45,73 +27,13 @@ const services = [
     description: "Unique and memorable logos that represent your brand.",
     bg: "from-[#00c3ff]/80 via-[#ffff1c]/90 to-[#00c3ff]/80"
   },
-  {
-    title: "Digital Marketing",
-    icon: "📈",
-    description: "Strategies to grow your business and reach a wider audience.",
-    bg: "from-[#fc5c7d]/80 via-[#6a82fb]/90 to-[#fc5c7d]/80"
-  }
 ];
-
-
-
-
-// const services = [
-//   {
-//     title: "Social Media Management",
-//     icon: "📱",
-//     description: "Engaging content for blogs, social media, and marketing campaigns.",
-//     bg: "from-[#ffecd2]/80 via-[#fcb69f]/90 to-[#ff6e7f]/80"
-//   },
-//   {
-//     title: "UI/UX Design",
-//     icon: "🎨",
-//     description: "Crafting intuitive and beautiful user experiences for web and mobile platforms.",
-//     bg: "from-[#43cea2]/80 via-[#185a9d]/90 to-[#2b5876]/80"
-//   },
-//   {
-//     title: "Web Development",
-//     icon: "💻",
-//     description: "Building fast, responsive, and scalable web applications tailored to your needs.",
-//     bg: "from-[#f7971e]/80 via-[#ffd200]/90 to-[#f7971e]/80"
-//   },
-//   {
-//     title: "Brand Identity",
-//     icon: "🚀",
-//     description: "Creating memorable brands with unique logos, colors, and visual guidelines.",
-//     bg: "from-[#f953c6]/80 via-[#b91d73]/90 to-[#f953c6]/80"
-//   },
-//   {
-//     title: "Content Creation",
-//     icon: "✍️",
-//     description: "Engaging content for blogs, social media, and marketing campaigns.",
-//     bg: "from-[#30cfd0]/80 via-[#330867]/90 to-[#30cfd0]/80"
-//   },
-//   {
-//     title: "Poster Design",
-//     icon: "🖼️",
-//     description: "Creative and eye-catching poster designs for your campaigns.",
-//     bg: "from-[#f9d423]/80 via-[#ff4e50]/90 to-[#f9d423]/80"
-//   },
-//   {
-//     title: "Logo Design",
-//     icon: "🌟",
-//     description: "Unique and memorable logos that represent your brand.",
-//     bg: "from-[#00c3ff]/80 via-[#ffff1c]/90 to-[#00c3ff]/80"
-//   },
-//   {
-//     title: "Digital Marketing",
-//     icon: "📈",
-//     description: "Strategies to grow your business and reach a wider audience.",
-//     bg: "from-[#fc5c7d]/80 via-[#6a82fb]/90 to-[#fc5c7d]/80"
-//   }
-// ];
 
 
 function ServicesSection() {
   return (
     <div 
-      className="w-[94%] max-w-6xl mx-auto px-6 mb-40"
+      className="w-[94%] max-w-6xl mx-auto px-6 mb-25 lg:mb-30"
     >
       <motion.div className="text-center mb-8"
       initial={{ opacity: 0, y: 30 }}
