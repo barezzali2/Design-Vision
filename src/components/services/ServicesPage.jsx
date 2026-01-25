@@ -81,8 +81,8 @@ function ServicesPage() {
             className="text-6xl mb-5 animate-bounce"
             style={{ animationDelay: `${index * 0.15}s` }}
             >{service.icon}</div>
-            <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-            <p className="text-base">{service.description}</p>
+            <h3 className="text-[21px] font-semibold mb-3">{service.title}</h3>
+            <p className="text-[14px]">{service.description}</p>
           </div>
         ))}
       </div>
