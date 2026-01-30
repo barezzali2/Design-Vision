@@ -20,7 +20,8 @@ function Navbar() {
                 <li>
                 <NavLink 
                 to="/"
-                className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
+                className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                // fixing the space between them
                 >
                     HOME
                 </NavLink>
@@ -29,7 +30,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/services"
-                    className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
+                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
                         SERVICES
                     </NavLink>
@@ -38,7 +39,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/projects"
-                    className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
+                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
                         PROJECTS
                     </NavLink>
@@ -47,7 +48,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/about"
-                    className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
+                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
                         ABOUT US
                     </NavLink>
@@ -56,7 +57,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/contact"
-                    className="text-xl font-semibold text-white hover:text-indigo-400 transition-colors"
+                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
                     CONTACT
                     </NavLink>
