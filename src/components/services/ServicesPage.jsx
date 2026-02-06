@@ -78,7 +78,7 @@ function ServicesPage() {
             className={`rounded-xl p-6 text-white bg-gradient-to-br ${service.bg} shadow-lg flex flex-col items-center text-center transform transition-transform hover:scale-105 duration-[0.3s] cursor-pointer`}
           >
             <div 
-            className="text-6xl mb-5 animate-bounce"
+            className="text-[45px] animate-bounce lg:text-6xl"
             style={{ animationDelay: `${index * 0.35}s` }}
             >{service.icon}</div>
             <h3 className="text-[21px] font-semibold mb-3">{service.title}</h3>
