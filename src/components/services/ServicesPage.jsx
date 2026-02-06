@@ -19,7 +19,7 @@ const services = [
     title: "Web Development",
     icon: "💻",
     description: "Building fast, responsive, and scalable web applications tailored to your needs.",
-    bg: "from-[#003396]/30 via-[#181c44]/90 to-[#26a8df]/65",
+    bg: "from-[#8AD952]/80 via-[#46A9BD]/70 to-[#8AD952]/80",
   },
   {
     title: "Brand Identity",
@@ -43,7 +43,7 @@ const services = [
     title: "Logo Design",
     icon: "🌟",
     description: "Unique and memorable logos that represent your brand.",
-    bg: "from-[#00c3ff]/80 via-[#ffff1c]/90 to-[#00c3ff]/80",
+    bg: "from-[#3CD1DE]/80 via-[#6C35D4]/90 to-[#3CD1DE]/80",
   },
   {
     title: "Digital Marketing",
@@ -75,11 +75,11 @@ function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`rounded-xl p-6 text-white bg-gradient-to-br ${service.bg} shadow-lg flex flex-col items-center text-center transform transition-transform hover:scale-105 cursor-pointer`}
+            className={`rounded-xl p-6 text-white bg-gradient-to-br ${service.bg} shadow-lg flex flex-col items-center text-center transform transition-transform hover:scale-105 duration-[0.3s] cursor-pointer`}
           >
             <div 
             className="text-6xl mb-5 animate-bounce"
-            style={{ animationDelay: `${index * 0.15}s` }}
+            style={{ animationDelay: `${index * 0.35}s` }}
             >{service.icon}</div>
             <h3 className="text-[21px] font-semibold mb-3">{service.title}</h3>
             <p className="text-[14px]">{service.description}</p>

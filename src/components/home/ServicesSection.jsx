@@ -13,7 +13,7 @@ const services = [
     title: "Web Development",
     icon: "💻",
     description: "Building fast, responsive, and scalable web applications tailored to your needs.",
-    bg: "from-[#003396]/30 via-[#181c44]/90 to-[#26a8df]/65"
+    bg: "from-[#8AD952]/80 via-[#46A9BD]/70 to-[#8AD952]/80"
   },
     {
     title: "Poster Design",
@@ -25,7 +25,7 @@ const services = [
     title: "Logo Design",
     icon: "🌟",
     description: "Unique and memorable logos that represent your brand.",
-    bg: "from-[#00c3ff]/80 via-[#ffff1c]/90 to-[#00c3ff]/80"
+    bg: "from-[#3CD1DE]/80 via-[#6C35D4]/90 to-[#3CD1DE]/80"
   },
 ];
 
