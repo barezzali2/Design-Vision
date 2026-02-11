@@ -136,18 +136,6 @@ function Navbar() {
                 </li>
             </ul>)}
             </div>
-            
-                {/* <select 
-                    name="languages"
-                    value={i18n.language}
-                    onChange={(e) => changeLanguage(e.target.value)}
-                    className="px-3 py-2 bg-[#181c24] text-white rounded-md cursor-pointer flex justify-center"
-                    >
-                    <option value="en">{t('nav.english')}</option>
-                    <option value="ku">{t('nav.kurdish')}</option>
-                    <option value="ar">{t('nav.arabic')}</option>
-                </select> */}
-            {/* </div> */}
                     
          
 
@@ -180,7 +168,9 @@ function Navbar() {
 
         
         {/* Small screen navbar */}
-        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 md:hidden ${menuOpen ? 'h-auto opacity-100 visible mt-[25px] mb-5' : 'h-0 opacity-0 invisible'}`}>
+        <ul 
+        className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 md:hidden ${menuOpen ? 'h-auto opacity-100 visible mt-[25px] mb-5' : 'h-0 opacity-0 invisible'}`}
+        >
             <li>
                 <NavLink 
                 to="/"

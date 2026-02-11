@@ -10,7 +10,7 @@ function ProjectsPage() {
 
   return (
     <motion.div 
-    className='mt-20 md:mt-15 mx-auto px-4 max-w-6xl'
+    className='mt-20 md:mt-15 mx-auto px-4 max-w-6xl w-[94%]'
     initial={{ opacity: 0, y:30 }}
     whileInView={{ opacity: 1, y:0 }}
     viewport={{once: true}}
