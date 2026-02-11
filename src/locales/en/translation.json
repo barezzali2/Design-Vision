@@ -272,7 +272,10 @@
                 "description": "This is amazing"
             }
 
-        ]
+        ],
+
+        "showMoreButton": "Show More",
+        "showLessButton": "Show Less"
 
     },
 

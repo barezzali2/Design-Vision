@@ -179,6 +179,100 @@
 
    "projects": {
 
+        "title": "Our Cutting Edge Projects",
+        "subTitle": "Explore our different projects with having an exclusive vision.",
+
+        "projectsList": [
+            {
+                "image": "/assets/gd1.jpg",
+                "title": "German Course",
+                "field": "Graphic Design",
+                "description": "Choose us. You will not regret!"
+            },
+              
+            {
+                "image": "/assets/gd2.jpg",
+                "title": "German Gold",
+                "field": "Graphic Design",
+                "description": "Design with our golden hands"
+            },
+
+            {
+                "image": "/assets/gd3.jpg",
+                "title": "Halbast",
+                "field": "Graphic Design",
+                "description": "This filter resolves all your problems"
+            },
+
+            {
+                "image": "/assets/uxui1.png",
+                "title": "GeTicket UI Design",
+                "field": "UX/UI Design",
+                "description": "Book your ticket in home"
+            },
+
+            {
+                "image": "/assets/uxui2.png",
+                "title": "Glamour Galaxy UI Design",
+                "field": "UX/UI Design",
+                "description": "Explore different styles"
+            },
+
+
+            {
+                "image": "/assets/uxui.png",
+                "title": "BUSULEY UI Design",
+                "field": "UX/UI Design",
+                "description": "Track real-time transportations"
+            },
+
+            {
+                "image": "/assets/web.png",
+                "title": "RetailXplore Project",
+                "field": "Web Development",
+                "description": "Facilitating shopping experiences"
+            },
+
+            {
+                "image": "/assets/web2.png",
+                "title": "Almoda Project",
+                "field": "Web Development",
+                "description": "Explore different brands"
+            },
+
+            {
+                "image": "/assets/web3.png",
+                "title": "Pathway to Productivity",
+                "field": "Web Development",
+                "description": "Engaging and interactive animations"
+            },
+
+            {
+                "image": "/assets/logo1.jpg",
+                "title": "Kraft Logo",
+                "field": "Logo Design",
+                "description": "The best logo ever"
+            },
+
+            {
+                "image": "/assets/logo2.png",
+                "title": "Almoda Logo",
+                "field": "Logo Design",
+                "description": "This is something different"
+            },
+
+            {
+                "image": "/assets/logo3.jpg",
+                "title": "BRST Company Logo",
+                "field": "Logo Design",
+                "description": "This is amazing"
+            }
+
+        ],
+
+    "showMoreButton": "عرض المزيد",
+    "showLessButton": "عرض أقل"
+
     },
 
 

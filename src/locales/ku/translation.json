@@ -263,7 +263,10 @@
                 "description": "ئەمە ناوازەیە"
             }
 
-        ]
+        ],
+
+        "showMoreButton": "زیاتر نیشان بدە",
+        "showLessButton": "کەمتر نیشان بدە"
 
     },
 
