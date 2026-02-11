@@ -2,8 +2,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Navbar />
@@ -16,35 +19,34 @@ function Contact() {
       transition={{ duration: 1.1 }}
       >
         <h1 className="text-[25px] md:text-4xl font-semibold mb-6">
-          Do not Hesitate to <br /> Contact Us
+          {t('contact.title')}
         </h1>
 
         <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
-          We’d love to hear from you. Whether you’re interested in working together, have a question, 
-          or simply want to say hello — feel free to reach out using the details below.
+          {t('contact.subTitle')}
         </p>
 
         <div className="max-w-2xl mx-auto text-gray-500 space-y-4">
-          <p><span className="font-semibold">Email: </span><a href="#">info@designvision.agency</a></p>
-          <p><span className="font-semibold">Phone: </span> <a href="#">+964 772 542 0663</a></p>
-          <p><span className="font-semibold">Location: </span>Sulaymaniyah, Kurdistan Region, Iraq</p>
+          <p><span className="font-semibold">{t('contact.emailLabel')}</span><a href="#">info@designvision.agency</a></p>
+          <p><span className="font-semibold">{t('contact.phoneLabel')}</span> <a href="#">+964 772 542 0663</a></p>
+          <p><span className="font-semibold">{t('contact.locationLabel')} </span>{t('contact.location')}</p>
         </div>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-6">Send Us a Message</h2>
+        <h2 className="text-2xl font-semibold mt-12 mb-6">{t('contact.messageTitle')}</h2>
 
         <form className="max-w-xl mx-auto space-y-4">
           <input
             type="text"
-            placeholder="Your Name"
+            placeholder={t('contact.name')}
             className="w-full border px-4 py-2 rounded-md outline-none"
           />
           <input
             type="email"
-            placeholder="Your Email"
+            placeholder={t('contact.email')}
             className="w-full border px-4 py-2 rounded-md outline-none"
           />
           <textarea
-            placeholder="Your Message"
+            placeholder={t('contact.message')}
             rows="4"
             className="w-full border px-4 py-2 rounded-md outline-none"
           ></textarea>
@@ -53,7 +55,7 @@ function Contact() {
             type="submit"
             className="px-6 py-2 cursor-pointer bg-indigo-500 text-white rounded-md hover:bg-indigo-800 transition"
           >
-            Send
+            {t('contact.sendButton')}
           </button>
         </form>
       </motion.div>
