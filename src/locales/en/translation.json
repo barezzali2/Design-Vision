@@ -1,0 +1,354 @@
+{
+    "nav": {
+        "home": "HOME",
+        "services": "SERVICES",
+        "projects": "PROJECTS",
+        "about": "ABOUT US",
+        "contact": "CONTACT",
+
+        "english": "English",
+        "kurdish": "Kurdish",
+        "arabic": "Arabic"
+    },
+
+
+
+
+
+
+    "home-hero": {
+        "title1": "Turn Your Vision",
+        "title2": "Into Reality",
+        "text": "We blend creativity with cutting-edge technology to craft digital experiences that captivate, engage, and inspire. From concept to creation, every project is a journey of innovation and artistic excellence.",
+        "getStartedButton": "Get Started"
+    },
+
+     "home-services": {
+        "title": "What We Offer",
+        "text": "See what we offer as a creative team.",
+        "serviceCards": [
+           {
+                "icon": "📱",
+                "title": "Social Media Management",
+                "text": "Engaging content for blogs, social media, and marketing campaigns.",
+                "bg": "from-[#4f3f99]/80 via-[#181c64]/90 to-[#26a8df]/80"
+            },
+
+             {
+                "icon": "💻",
+                "title": "Web Development",
+                "text": "Building fast, responsive, and scalable web applications tailored to your needs.",
+                "bg": "from-[#8AD952]/80 via-[#46A9BD]/70 to-[#8AD952]/80"
+
+            },
+
+             {
+                "icon": "🖼️",
+                "title": "Poster Design",
+                "text": "Creative and eye-catching poster designs for your compaigns.",
+                "bg": "from-[#f9d423]/80 via-[#ff4e50]/90 to-[#f9d423]/80"
+            },
+
+             {
+                "icon": "🌟",
+                "title": "Logo Design",
+                "text": "Unique and memorable logos that represent your brand.",
+                "bg": "from-[#3CD1DE]/80 via-[#6C35D4]/90 to-[#3CD1DE]/80"
+            }
+        ]
+    },
+    
+    "home-projects": {
+        "title": "Explore Our Projects",
+        "subTitle": "Click the deck to expand the projects",
+        "subTitle2": "Check our astonishing projects",
+        "expandButton": "Expand Stack",
+        "resetButton": "Reset Deck",
+        "projectCards": [
+            {
+                "title": "Modern Design",
+                "text": "Innovative design meeting modern functionality.",
+                "image": "/assets/design1.jpg",
+                "viewMore": "View More..."
+            },
+
+            {
+                "title": "E-Commerce Dashboard",
+                "text": "Scalable web applications for nowadays businesses",
+                "image": "/assets/web.png",
+                "viewMore": "View More..."
+            },
+
+            {
+                "title": "Concept Development",
+                "text": "Get in touch from idea to deployment",
+                "image": "/assets/uxui.png",
+                "viewMore": "View More..."
+            }
+
+        ]
+
+    },
+
+
+
+
+
+
+    
+    "services": {
+        "title": "Our Provided Services",
+        "subTitle": "Discover how we can help elevate your brand with our range of expert services tailored to your needs.",
+
+        "serviceCards": [
+            {
+            "title": "Social Media Management",
+            "icon": "📱",
+            "description": "Engaging content for blogs, social media, and marketing campaigns.",
+            "bg": "from-[#4f3f99]/80 via-[#181c64]/90 to-[#26a8df]/80"
+        },
+        {
+            "title": "UX/UI Design",
+            "icon": "🎨",
+            "description": "Crafting intuitive and beautiful user experiences for web and mobile platforms.",
+            "bg": "from-[#4b0d00]/80 via-[#311c24]/90 to-[#002066]/80"
+        },
+        {
+            "title": "Web Development",
+            "icon": "💻",
+            "description": "Building fast, responsive, and scalable web applications tailored to your needs.",
+            "bg": "from-[#8AD952]/80 via-[#46A9BD]/70 to-[#8AD952]/80"
+        },
+        {
+            "title": "Brand Identity",
+            "icon": "🚀",
+            "description": "Creating memorable brands with unique logos, colors, and visual guidelines.",
+            "bg": "from-[#f7941f]/80 via-[#481c94]/90 to-[#eb1d25]/80"
+        },
+        {
+            "title": "Content Creation",
+            "icon": "📝",
+            "description": "Engaging content for blogs, social media, and marketing campaigns.",
+            "bg": "from-[#4f3f99]/80 via-[#181c64]/90 to-[#26a8df]/80"
+        },
+        {
+            "title": "Poster Design",
+            "icon": "🖼️",
+            "description": "Creative and eye-catching poster designs for your campaigns.",
+            "bg": "from-[#f9d423]/80 via-[#ff4e50]/90 to-[#f9d423]/80"
+        },
+        {
+            "title": "Logo Design",
+            "icon": "🌟",
+            "description": "Unique and memorable logos that represent your brand.",
+            "bg": "from-[#3CD1DE]/80 via-[#6C35D4]/90 to-[#3CD1DE]/80"
+        },
+        {
+            "title": "Digital Marketing",
+            "icon": "📈",
+            "description": "Strategies to grow your business and reach a wider audience.",
+            "bg": "from-[#fc5c7d]/80 via-[#6a82fb]/90 to-[#fc5c7d]/80"
+        }
+        ],
+
+        "title2": "Ready to take your business to the next level?",
+        "subTitle2": "Partner with us to transform your ideas into reality. Whether you’re a startup or an established business, our expert team is here to support your growth.",
+
+        "startButton": "Get Started Today",
+
+        "clientsTitle": "What Our Clients Say",
+        "clientsFeedbacks": [
+            {
+                "comment": "The team’s creativity and dedication helped us amplify our brand presence across social media platforms.",
+                "name": "Ahmed Hiwa, CEO"
+            },
+
+            {
+                "comment": "Exceptional web development service that perfectly matched our requirements and deadlines.",
+                "name": "Hussein Koye, Product Manager"
+            },
+
+            {
+                "comment": "Their brand identity work brought a fresh and modern look to our company that our customers love.",
+                "name": "Ravear Najm, Co-Founder"
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+    "projects": {
+        "title": "Our Cutting Edge Projects",
+        "subTitle": "Explore our different projects with having an exclusive vision.",
+
+        "projectsList": [
+            {
+                "image": "/assets/gd1.jpg",
+                "title": "German Course",
+                "field": "Graphic Design",
+                "description": "Choose us. You will not regret!"
+            },
+              
+            {
+                "image": "/assets/gd2.jpg",
+                "title": "German Gold",
+                "field": "Graphic Design",
+                "description": "Design with our golden hands"
+            },
+
+            {
+                "image": "/assets/gd3.jpg",
+                "title": "Halbast",
+                "field": "Graphic Design",
+                "description": "This filter resolves all your problems"
+            },
+
+            {
+                "image": "/assets/uxui1.png",
+                "title": "GeTicket UI Design",
+                "field": "UX/UI Design",
+                "description": "Book your ticket in home"
+            },
+
+            {
+                "image": "/assets/uxui2.png",
+                "title": "Glamour Galaxy UI Design",
+                "field": "UX/UI Design",
+                "description": "Explore different styles"
+            },
+
+
+            {
+                "image": "/assets/uxui.png",
+                "title": "BUSULEY UI Design",
+                "field": "UX/UI Design",
+                "description": "Track real-time transportations"
+            },
+
+            {
+                "image": "/assets/web.png",
+                "title": "RetailXplore Project",
+                "field": "Web Development",
+                "description": "Facilitating shopping experiences"
+            },
+
+            {
+                "image": "/assets/web2.png",
+                "title": "Almoda Project",
+                "field": "Web Development",
+                "description": "Explore different brands"
+            },
+
+            {
+                "image": "/assets/web3.png",
+                "title": "Pathway to Productivity",
+                "field": "Web Development",
+                "description": "Engaging and interactive animations"
+            },
+
+            {
+                "image": "/assets/logo1.jpg",
+                "title": "Kraft Logo",
+                "field": "Logo Design",
+                "description": "The best logo ever"
+            },
+
+            {
+                "image": "/assets/logo2.png",
+                "title": "Almoda Logo",
+                "field": "Logo Design",
+                "description": "This is something different"
+            },
+
+            {
+                "image": "/assets/logo3.jpg",
+                "title": "BRST Company Logo",
+                "field": "Logo Design",
+                "description": "This is amazing"
+            }
+
+        ]
+
+    },
+
+
+
+
+
+
+
+
+
+
+    "aboutUs": {
+        "title": "About Our Design Vision Agency",
+        "subTitle": "We are a creative design agency focused on turning ideas into clean, modern, and meaningful digital experiences. Our goal is simple: combine creative thinking with practical design to help brands communicate clearly and effectively.",
+
+        "leftSide": "What We Do",
+        "description1": "We specialize in visual identity, web design, and digital storytelling. We believe good design is not only about looks, rather it should solve a problem, deliver a message, and create a lasting impression.",
+
+        "rightSide": "Our Values",
+        "description2": [
+            "Simple and clean design",
+            "Attention to detail",
+            "Creativity and purpose",
+            "Working closely with clients"
+        ]
+    },
+
+
+
+
+
+
+
+
+
+     "contact": {
+        "title": "Do not Hesitate to Contact Us",
+        "subTitle": "We’d love to hear from you. Whether you’re interested in working together, have a question, or simply want to say hello — feel free to reach out using the details below.",
+
+        "emailLabel": "Email: ",
+        "phoneLabel": "Phone: ",
+        "locationLabel": "Location: ",
+        "location": "Sulaymaniyah, Kurdistan Region, Iraq",
+
+        "messageTitle": "Send Us a Message",
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message",
+
+        "sendButton": "Send"
+
+    },
+
+
+
+
+
+
+
+
+    "footer": {
+        "contactTitle": "Get in touch",
+        "location": "Green City, Sulaimani",
+
+        "aboutDV": "About Design Vision",
+        "aboutText": " We’d be happy to connect with you. Whether you’re looking to collaborate, need information, or just want to get in touch, do not hesitate, you can reach us anytime using the provided contact details.",
+
+        "quickLinks": "Quick Links",
+        "portfolio": "Portfolio",
+        "logos": "Logos",
+        "services": "Explore Services",
+        "offers": "Special Offers",
+
+        "copyright": "© 2025 DesignVision. All rights reserved."
+        
+    }
+    
+}
