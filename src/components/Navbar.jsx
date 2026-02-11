@@ -23,7 +23,7 @@ function Navbar() {
     }
 
   return (
-    <div className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 flex-wrap items-center justify-between px-2 lg:px-10`}>
+    <div className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 items-center flex-wrap gap-10 md:gap-0 justify-around lg:px-10`}>
             <Logo />
 
 
@@ -87,12 +87,12 @@ function Navbar() {
 
             {openLangList && ( 
                 <ul 
-                className='border-[0.5px] rounded-[10px] absolute top-full mt-2 md:mt-3 '
+                className='border-[0.5px] rounded-[10px] absolute top-full mt-2 md:mt-3 p-1 '
                 
                 >
                 <li 
                 value="en" 
-                className={`hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-1 px-2 md:py-1 md:mt-1 md:mb-2 md:px-5 cursor-pointer`}
+                className={`hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mt-1 md:mb-2 md:px-5 cursor-pointer`}
                 onClick={() => {
                         changeLanguage('en');
                         handleOpenLang();
@@ -107,7 +107,7 @@ function Navbar() {
 
                 <li 
                 value="ku" 
-                className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-1 px-2 md:py-1 md:mb-2 md:px-5 cursor-pointer'
+                className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mb-2 md:px-5 cursor-pointer'
                 onClick={() => {
                         changeLanguage('ku');
                         handleOpenLang();
@@ -121,7 +121,7 @@ function Navbar() {
                 </li>
                 <li 
                 value="ar" 
-                className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-1 px-2 md:py-1 md:mb-1 md:px-5 cursor-pointer'
+                className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mb-1 md:px-5 cursor-pointer'
                 onClick={() => {
                         changeLanguage('ar');
                         handleOpenLang();
