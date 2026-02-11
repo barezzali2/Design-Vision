@@ -77,7 +77,7 @@ function Navbar() {
             </ul>
 
             {/* <div className="flex justify-center"> */}
-            <div className='relative flex justify-center'>
+            <div className='hidden lg:relative lg:flex lg:justify-center'>
             <button 
             className='cursor-pointer' 
             onClick={handleOpenLang}>
@@ -178,7 +178,7 @@ function Navbar() {
 
         
         {/* Small screen navbar */}
-        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 md:hidden ${menuOpen ? 'h-[320px] opacity-100 visible mt-[25px] ' : 'h-0 opacity-0 invisible'}`}>
+        <ul className={`flex flex-col w-full list-none overflow-hidden transition-all duration-350 ease-in-out text-center gap-8 md:hidden ${menuOpen ? 'h-auto opacity-100 visible mt-[25px] mb-5' : 'h-0 opacity-0 invisible'}`}>
             <li>
                 <NavLink 
                 to="/"
@@ -228,6 +228,61 @@ function Navbar() {
                     {t('nav.contact')}
                 </NavLink>
             </li>
+
+
+
+
+            {/* Languages */}
+            <ul 
+                className='flex flex-row mx-auto gap-8 mt-5'
+                > 
+                <li 
+                value="en" 
+                className={`hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mt-1 md:mb-2 md:px-5 cursor-pointer`}
+                onClick={() => {
+                        changeLanguage('en');
+                        // handleOpenLang();
+                    }}
+                >
+                    <button 
+                    className='cursor-pointer'
+                    >
+                    {t('nav.english')}
+                    </button>
+                </li>
+
+                <li 
+                value="ku" 
+                className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mb-2 md:px-5 cursor-pointer'
+                onClick={() => {
+                        changeLanguage('ku');
+                        // handleOpenLang();
+                    }}
+                >
+                    <button 
+                    className='cursor-pointer'
+                    >
+                    {t('nav.kurdish')}
+                    </button>
+                </li>
+                <li 
+                value="ar" 
+                className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 mb-1 px-2 md:py-1 md:mb-1 md:px-5 cursor-pointer'
+                onClick={() => {
+                        changeLanguage('ar');
+                        // handleOpenLang();
+                    }}
+                >
+                    <button 
+                    className='cursor-pointer'
+                    >
+                    {t('nav.arabic')}
+                    </button>
+                </li>
+            </ul>
+            
+
+
         </ul>
     </div>
   )
