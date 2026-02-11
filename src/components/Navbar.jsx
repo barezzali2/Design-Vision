@@ -76,6 +76,7 @@ function Navbar() {
                 </li>
             </ul>
 
+
             {/* <div className="flex justify-center"> */}
             <div className='hidden lg:relative lg:flex lg:justify-center'>
             <button 
@@ -149,6 +150,7 @@ function Navbar() {
             {/* </div> */}
                     
          
+
 
 
             {/* Hambergur button */}
@@ -241,7 +243,7 @@ function Navbar() {
                 className={`hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mt-1 md:mb-2 md:px-5 cursor-pointer`}
                 onClick={() => {
                         changeLanguage('en');
-                        // handleOpenLang();
+                        handleSetMenu();
                     }}
                 >
                     <button 
@@ -256,7 +258,7 @@ function Navbar() {
                 className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mb-2 md:px-5 cursor-pointer'
                 onClick={() => {
                         changeLanguage('ku');
-                        // handleOpenLang();
+                        handleSetMenu();
                     }}
                 >
                     <button 
@@ -270,7 +272,7 @@ function Navbar() {
                 className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 mb-1 px-2 md:py-1 md:mb-1 md:px-5 cursor-pointer'
                 onClick={() => {
                         changeLanguage('ar');
-                        // handleOpenLang();
+                        handleSetMenu();
                     }}
                 >
                     <button 
