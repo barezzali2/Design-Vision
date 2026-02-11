@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import React, { useRef } from 'react';
 import { motion } from "framer-motion";
 
 function HeroSection() {
   const currentRef = useRef(null);
+      const { t } = useTranslation();
 
   return (
     <div className='mt-20 mb-20'>
@@ -18,10 +20,12 @@ function HeroSection() {
           viewport={{ once: true }}
           transition={{ duration: 1.1 }}
         >
-          <h2 className='text-2xl mb-3 lg:text-4xl lg:mb-6'>Turn Your Vision</h2>
+          <h2 className='text-2xl mb-3 lg:text-4xl lg:mb-6'>
+            {t('home-hero.title1')}
+          </h2>
 
           <motion.h2
-            className="text-4xl font-semibold bg-clip-text text-transparent lg:text-6xl"
+            className="text-4xl font-semibold bg-clip-text text-transparent lg:text-6xl lg:pb-5 mb-10 lg:mb-15"
             style={{
               backgroundImage: 'linear-gradient(90deg, #f7941f, #f7941f, #eb1d25, #4f3f99, #003366, #26a8df)',
               backgroundSize: '150% auto',
@@ -36,14 +40,14 @@ function HeroSection() {
               ease: "linear"
             }}
           >
-            Into Reality
+            {t('home-hero.title2')}
           </motion.h2>
 
-          {/* Logo on Left */}
+          {/* Logo */}
           <motion.img
             src="/assets/name.png"
             alt="name"
-            className='w-64 mt-10 mx-auto lg:w-120 lg:mt-15'
+            className='w-64 mx-auto lg:w-120 lg:mt-10'
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, type: "tween", ease: "easeOut" }}
@@ -71,9 +75,7 @@ function HeroSection() {
       transition={{ duration: 1.7 }}
       >
         <p>
-          We blend creativity with cutting-edge technology to craft digital experiences
-          that captivate, engage, and inspire. From concept to creation, every project
-          is a journey of innovation and artistic excellence.
+          {t('home-hero.text')}
         </p>
       </motion.div>
 
@@ -93,7 +95,7 @@ function HeroSection() {
           }}
         >
            <h4 className='mb-20 relative overflow-hidden group px-8 py-4 rounded-full text-xl font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:scale-105 active:scale-95 hover:shadow-[0_0_30px_rgba(168,85,247,0.7),0_0_60px_rgba(168,85,247,0.4)] transition-all duration-500 cursor-pointer before:absolute before:inset-0 before:bg-gradient-to-r before:from-white/0 before:via-white/20 before:to-white/0 before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-600'>
-            Get Started
+            {t('home-hero.getStartedButton')}
           </h4>
         </a>
 

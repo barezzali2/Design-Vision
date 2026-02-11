@@ -1,36 +1,45 @@
+import { useTranslation } from 'react-i18next';
+
 import React from 'react'
 import { motion } from "framer-motion";
 
 
-const services = [
-    {
-    title: "Social Media Management",
-    icon: "📱",
-    description: "Engaging content for blogs, social media, and marketing campaigns.",
-    bg: "from-[#4f3f99]/80 via-[#181c64]/90 to-[#26a8df]/80"
-  },
-  {
-    title: "Web Development",
-    icon: "💻",
-    description: "Building fast, responsive, and scalable web applications tailored to your needs.",
-    bg: "from-[#8AD952]/80 via-[#46A9BD]/70 to-[#8AD952]/80"
-  },
-    {
-    title: "Poster Design",
-    icon: "🖼️",
-    description: "Creative and eye-catching poster designs for your campaigns.",
-    bg: "from-[#f9d423]/80 via-[#ff4e50]/90 to-[#f9d423]/80"
-  },
-  {
-    title: "Logo Design",
-    icon: "🌟",
-    description: "Unique and memorable logos that represent your brand.",
-    bg: "from-[#3CD1DE]/80 via-[#6C35D4]/90 to-[#3CD1DE]/80"
-  },
-];
+// const services = [
+//     {
+//     // title: "Social Media Management",
+//     // icon: "📱",
+//     // description: "Engaging content for blogs, social media, and marketing campaigns.",
+//     // bg: "from-[#4f3f99]/80 via-[#181c64]/90 to-[#26a8df]/80"
+//   },
+//   {
+//     // title: "Web Development",
+//     // icon: "💻",
+//     // description: "Building fast, responsive, and scalable web applications tailored to your needs.",
+//     // bg: "from-[#8AD952]/80 via-[#46A9BD]/70 to-[#8AD952]/80"
+//   },
+//     {
+//     // title: "Poster Design",
+//     // icon: "🖼️",
+//     // description: "Creative and eye-catching poster designs for your campaigns.",
+//     // bg: "from-[#f9d423]/80 via-[#ff4e50]/90 to-[#f9d423]/80"
+//   },
+//   {
+//     // title: "Logo Design",
+//     // icon: "🌟",
+//     // description: "Unique and memorable logos that represent your brand.",
+//     // bg: "from-[#3CD1DE]/80 via-[#6C35D4]/90 to-[#3CD1DE]/80"
+//   },
+// ];
+
+
 
 
 function ServicesSection() {
+        const { t } = useTranslation();
+
+        const serviceCardsObj = t('home-services.serviceCards', { returnObjects: true });
+        const serviceCards = Object.values(serviceCardsObj);
+  
   return (
     <div 
       className="w-[94%] max-w-6xl mx-auto px-6 mb-25 lg:mb-30"
@@ -41,16 +50,18 @@ function ServicesSection() {
       viewport={{ once: true }}
       transition={{ duration: 1.3 }}
       >
-        <h3 className="text-[25px] md:text-4xl font-bold mb-2 md:mb-4">What We Offer</h3>
-        <p className="text-[15px] text-gray-300">
-          See what we offer as a creative team.
+        <h3 className="text-[25px] md:text-4xl font-bold mb-2 md:mb-4">
+            {t('home-services.title')}
+        </h3>
+        <p className="text-[15px] text-gray-400">
+             {t('home-services.text')}
         </p>
       </motion.div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {services.map((service, idx) => (
+        {serviceCards.map((service, idx) => (
           <motion.div
             key={idx}
-            className={`relative rounded-xl shadow-lg p-8 flex flex-col items-center justify-center overflow-hidden group bg-gradient-to-br ${service.bg}`}
+            className={`relative rounded-xl shadow-lg p-8 flex flex-col items-center justify-center overflow-hidden group bg-gradient-to-br ${service.bg} `}
             initial={{ opacity: 0, y: 70, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             whileHover={{ scale: 1.05, y: -5 }}
@@ -79,7 +90,7 @@ function ServicesSection() {
                 {service.icon}
               </motion.div>
               <h4 className="text-xl font-bold mb-2">{service.title}</h4>
-              <p className="text-gray-200 text-sm">{service.description}</p>
+              <p className="text-gray-200 text-sm">{service.text}</p>
             </div>
           </motion.div>
         ))}
