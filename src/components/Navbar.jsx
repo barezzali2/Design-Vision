@@ -100,7 +100,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className='cursor-pointer'
+                    className={`cursor-pointer ${i18n.language === "en" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.english')}
                     </button>
@@ -115,7 +115,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className='cursor-pointer'
+                    className={`cursor-pointer ${i18n.language === "ku" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.kurdish')}
                     </button>
@@ -129,7 +129,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className='cursor-pointer'
+                    className={`cursor-pointer ${i18n.language === "ar" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.arabic')}
                     </button>
@@ -239,7 +239,7 @@ function Navbar() {
                 className='flex flex-row mx-auto gap-8 mt-5'
                 > 
                 <li 
-                value="en" 
+                
                 className={`hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mt-1 md:mb-2 md:px-5 cursor-pointer`}
                 onClick={() => {
                         changeLanguage('en');
@@ -247,14 +247,14 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className='cursor-pointer'
+                    className={`cursor-pointer ${i18n.language === "en" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.english')}
                     </button>
                 </li>
 
                 <li 
-                value="ku" 
+                 
                 className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 px-2 md:py-1 md:mb-2 md:px-5 cursor-pointer'
                 onClick={() => {
                         changeLanguage('ku');
@@ -262,13 +262,13 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className='cursor-pointer'
+                    className={`cursor-pointer ${i18n.language === "ku" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.kurdish')}
                     </button>
                 </li>
                 <li 
-                value="ar" 
+                
                 className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-2 mb-1 px-2 md:py-1 md:mb-1 md:px-5 cursor-pointer'
                 onClick={() => {
                         changeLanguage('ar');
@@ -276,7 +276,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className='cursor-pointer'
+                    className={`cursor-pointer ${i18n.language === "ar" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.arabic')}
                     </button>
