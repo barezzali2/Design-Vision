@@ -1,18 +1,30 @@
+import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react'
 import Logo from './Logo'
 import { Link, NavLink } from 'react-router-dom'
+import { MdLanguage } from "react-icons/md";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [openLangList, setOpenLangList] = useState(false);
+    const { t, i18n } = useTranslation();
+    const isRTL = i18n.dir() === 'rtl';
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
 
     function handleSetMenu() {
         setMenuOpen((prev) => !prev);
     }
-  return (
-    <div className='flex flex-row backdrop-blur-md bg-[#1220301f] overflow-hidden sticky top-0 w-full z-11 flex-wrap items-center justify-around'>
-            <Logo />
 
-            <div className='w-40 md:w-0'></div>
+    function handleOpenLang() {
+        setOpenLangList((open) => !open)
+    }
+
+  return (
+    <div className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 flex-wrap items-center justify-between px-2 lg:px-10`}>
+            <Logo />
 
 
             {/* Tablet/Large screen navbar */}
@@ -20,49 +32,123 @@ function Navbar() {
                 <li>
                 <NavLink 
                 to="/"
-                className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                 // fixing the space between them
                 >
-                    HOME
+                    {t('nav.home')}
                 </NavLink>
                 </li>
 
                 <li>
                     <NavLink 
                     to="/services"
-                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
-                        SERVICES
+                        {t('nav.services')}
                     </NavLink>
                 </li>
 
                 <li>
                     <NavLink 
                     to="/projects"
-                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
-                        PROJECTS
+                        {t('nav.projects')}
                     </NavLink>
                 </li>
 
                 <li>
                     <NavLink 
                     to="/about"
-                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
-                        ABOUT US
+                        {t('nav.about')}
                     </NavLink>
                 </li>
 
                 <li>
                     <NavLink 
                     to="/contact"
-                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition-colors pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200  pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
-                    CONTACT
+                    {t('nav.contact')}
                     </NavLink>
                 </li>
             </ul>
+
+            {/* <div className="flex justify-center"> */}
+            <div className='relative flex justify-center'>
+            <button 
+            className='cursor-pointer' 
+            onClick={handleOpenLang}>
+                <MdLanguage className='text-[26px] md:text-[28px] hover:text-indigo-400 transition duration-200 ' />
+            </button>
+
+
+            {openLangList && ( 
+                <ul 
+                className='border-[0.5px] rounded-[10px] absolute top-full mt-2 md:mt-3 '
+                
+                >
+                <li 
+                value="en" 
+                className={`hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-1 px-2 md:py-1 md:mt-1 md:mb-2 md:px-5 cursor-pointer`}
+                onClick={() => {
+                        changeLanguage('en');
+                        handleOpenLang();
+                    }}
+                >
+                    <button 
+                    className='cursor-pointer'
+                    >
+                    {t('nav.english')}
+                    </button>
+                </li>
+
+                <li 
+                value="ku" 
+                className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-1 px-2 md:py-1 md:mb-2 md:px-5 cursor-pointer'
+                onClick={() => {
+                        changeLanguage('ku');
+                        handleOpenLang();
+                    }}
+                >
+                    <button 
+                    className='cursor-pointer'
+                    >
+                    {t('nav.kurdish')}
+                    </button>
+                </li>
+                <li 
+                value="ar" 
+                className='hover:bg-slate-800 hover:text-indigo-600 rounded-[10px] mt-1 px-2 md:py-1 md:mb-1 md:px-5 cursor-pointer'
+                onClick={() => {
+                        changeLanguage('ar');
+                        handleOpenLang();
+                    }}
+                >
+                    <button 
+                    className='cursor-pointer'
+                    >
+                    {t('nav.arabic')}
+                    </button>
+                </li>
+            </ul>)}
+            </div>
+            
+                {/* <select 
+                    name="languages"
+                    value={i18n.language}
+                    onChange={(e) => changeLanguage(e.target.value)}
+                    className="px-3 py-2 bg-[#181c24] text-white rounded-md cursor-pointer flex justify-center"
+                    >
+                    <option value="en">{t('nav.english')}</option>
+                    <option value="ku">{t('nav.kurdish')}</option>
+                    <option value="ar">{t('nav.arabic')}</option>
+                </select> */}
+            {/* </div> */}
+                    
+         
 
 
             {/* Hambergur button */}
@@ -70,19 +156,19 @@ function Navbar() {
             onClick={handleSetMenu}
             className="relative w-[30px] h-[25px] flex flex-col justify-center items-center cursor-pointer md:hidden z-[1002]"
             >
-                {/* Top Bar */}
+             
                 <span
                     className={`absolute w-full h-[4.0px] bg-white/85 rounded-[3px] transition-all duration-200 ease-in-out
                     ${menuOpen ? 'rotate-45' : '-translate-y-[8px]'}`}
                 ></span>
 
-                {/* Middle Bar */}
+              
                 <span
                     className={`absolute w-full h-[4.0px] bg-white/85 rounded-[3px] transition-all duration-200 ease-in-out
                     ${menuOpen ? 'opacity-0' : 'opacity-100'}`}
                 ></span>
 
-                {/* Bottom Bar */}
+             
                 <span
                     className={`absolute w-full h-[4.0px] bg-white/85 rounded-[3px] transition-all duration-200 ease-in-out
                     ${menuOpen ? '-rotate-45' : 'translate-y-[8px]'}`}
@@ -99,7 +185,7 @@ function Navbar() {
                 className="text-xl font-semibold text-white transition-colors"
                 onClick={handleSetMenu}
                 >
-                    HOME
+                    {t('nav.home')}
                 </NavLink>
             </li>
 
@@ -109,7 +195,7 @@ function Navbar() {
                 className="text-xl font-semibold text-white transition-colors"
                 onClick={handleSetMenu}
                 >
-                    SERVICES
+                    {t('nav.services')}
                 </NavLink>
             </li>
 
@@ -119,7 +205,7 @@ function Navbar() {
                 className="text-xl font-semibold text-white transition-colors"
                 onClick={handleSetMenu}
                 >
-                    PROJECTS
+                    {t('nav.projects')}
                 </NavLink>
             </li>
 
@@ -129,7 +215,7 @@ function Navbar() {
                 className="text-xl font-semibold text-white transition-colors"
                 onClick={handleSetMenu}
                 >
-                    ABOUT US
+                    {t('nav.about')}
                 </NavLink>
             </li>
 
@@ -139,7 +225,7 @@ function Navbar() {
                 className="text-xl font-semibold text-white transition-colors"
                 onClick={handleSetMenu}
                 >
-                    CONTACT
+                    {t('nav.contact')}
                 </NavLink>
             </li>
         </ul>
