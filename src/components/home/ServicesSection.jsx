@@ -67,10 +67,10 @@ function ServicesSection() {
             whileHover={{ scale: 1.05, y: -5 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ 
-              duration: 0.6,
-              delay: idx * 0.12,
-              ease: [0.25, 0.4, 0.25, 1],
-              scale: { duration: 0.4 },
+              duration: 0.4,
+              // delay: idx * 0.01,
+              // ease: [0.25, 0.4, 0.25, 1],
+              scale: { duration: 0.3 },
             }}
           >
             {/* Intuitive backdrop effect */}

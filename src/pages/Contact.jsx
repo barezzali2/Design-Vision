@@ -8,11 +8,11 @@ function Contact() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <>
       <Navbar />
 
       <motion.div 
-      className="px-6 md:px-20 text-center mx-7 mt-20 md:mt-15"
+      className="px-6 md:px-20 text-center mx-7 mt-20 lg:my-15"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -61,7 +61,7 @@ function Contact() {
       </motion.div>
 
       <Footer />
-    </div>
+    </>
   );
 }
 

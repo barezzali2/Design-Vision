@@ -34,7 +34,7 @@ function ServicesPage() {
         {serviceCards.map((service, index) => (
           <div
             key={index}
-            className={`rounded-xl p-6 text-white bg-gradient-to-br ${service.bg} shadow-lg flex flex-col items-center text-center transform transition-transform hover:scale-105 duration-[0.3s] cursor-pointer`}
+            className={`rounded-xl p-6 text-white bg-gradient-to-br ${service.bg} shadow-lg flex flex-col items-center text-center transform transition-transform hover:scale-105 duration-[0.4s] ease-in-out cursor-pointer`}
           >
             <div 
             className="text-[45px] animate-bounce lg:text-6xl"
