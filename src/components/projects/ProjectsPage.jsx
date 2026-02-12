@@ -55,7 +55,7 @@ function ProjectsPage() {
     }
     </div>
 
-    <Button expand={handleExpand} className="bg-[#241f33a2] rounded-xl p-3 border-1 hover:bg-[#0e0c13] transition transform duration-150 cursor-pointer">
+    <Button expand={handleExpand} className="bg-gray-800 rounded-xl p-3 hover:bg-gray-900 transition transform duration-150 cursor-pointer">
       {isExpanded ? t('projects.showLessButton') : t('projects.showMoreButton')}
     </Button>
 

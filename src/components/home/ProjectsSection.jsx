@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { FiChevronRight } from "react-icons/fi";
 
 
 function ProjectsSection() {
@@ -18,8 +19,8 @@ function ProjectsSection() {
   const variants = {
     stacked: (i) => ({
       x: 0,
-      y: i * -6,
-      rotate: i * 2,
+      y: i * -16,
+      rotate: i * 7,
       scale: 1 - i * 0.03,
       zIndex: projectCards.length - i,
       opacity: 1,
@@ -50,12 +51,42 @@ function ProjectsSection() {
         <p className="hidden lg:block lg:text-gray-400">
           {t('home-projects.subTitle')}
         </p>
-        <button
+        {/* <button
           onClick={handleSetExpanded}
           className="hidden lg:inline mt-6 px-6 py-2 bg-indigo-600 rounded-full text-white font-medium hover:bg-indigo-500 transition cursor-pointer"
         >
           {expanded ? t('home-projects.resetButton') : t('home-projects.expandButton')}
-        </button>
+        </button> */}
+
+        <motion.button
+          onClick={handleSetExpanded}
+          className="hidden lg:inline-flex mt-8 mb-4 items-center gap-2 rounded-full border border-indigo-400/40  bg-gradient-to-r from-[#7835dc9b] to-sky-600 px-5 py-4 text-white font-semibold shadow-[0_8px_24px_rgba(79,70,229,0.35)] cursor-pointer hover:scale-[1.1] transition transform duration-400 "
+          aria-expanded={expanded}
+          aria-label={expanded ? t('home-projects.resetButton') : t('home-projects.expandButton')}
+          style={{
+              backgroundImage: 'linear-gradient(90deg, #762fe09b, #7835dc9b, #8645e89b, #3e30dbbb, #4f42e1bb)',
+              backgroundSize: '150% auto',
+            }}
+            animate={{
+              backgroundPosition: ["0% 50%", "100% 50%"],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear"
+            }}
+        >
+          <span>{expanded ? t('home-projects.resetButton') : t('home-projects.expandButton')}</span>
+          <motion.span
+            animate={{ rotate: expanded ? 90 : 0, x: expanded ? 1 : 0 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="inline-flex items-center"
+          >
+            <FiChevronRight className="text-lg" />
+      </motion.span>
+    </motion.button>
+
 
         <p className='text-gray-400 mt-6 md:hidden lg:hidden'>
             {t("home-projects.subTitle2")}
@@ -93,7 +124,7 @@ function ProjectsSection() {
       
 
       {/* Cards in desktop screen*/}
-      <div className="hidden relative w-full h-[400px] justify-center items-center lg:inline-flex">
+      <div className="hidden lg:w-full lg:justify-center lg:items-center lg:flex lg:mx-auto lg:mt-50">
         {projectCards.map((project, idx) => (
           <motion.div
             key={idx}

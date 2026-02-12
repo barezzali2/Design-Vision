@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Logo from './Logo'
 import { Link, NavLink } from 'react-router-dom'
 import { MdLanguage } from "react-icons/md";
@@ -8,7 +8,26 @@ function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [openLangList, setOpenLangList] = useState(false);
     const { t, i18n } = useTranslation();
-    const isRTL = i18n.dir() === 'rtl';
+    // const isRTL = i18n.dir() === 'rtl';
+
+    const dropDownRef = useRef(null);
+
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if(dropDownRef.current && !dropDownRef.current.contains(event.target)) {
+                setOpenLangList(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+
+    }, [])
+
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -23,7 +42,7 @@ function Navbar() {
     }
 
   return (
-    <div className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 items-center flex-wrap justify-between px-10 lg:px-10`}>
+    <div className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 items-center flex-wrap justify-between px-10 lg:px-15`}>
             <Logo />
 
 
@@ -78,7 +97,10 @@ function Navbar() {
 
 
             {/* <div className="flex justify-center"> */}
-            <div className='hidden lg:relative lg:flex lg:justify-center'>
+            <div 
+            ref={dropDownRef}
+            className='hidden lg:relative lg:flex lg:justify-center'>
+                
             <button 
             className='cursor-pointer' 
             onClick={handleOpenLang}>
