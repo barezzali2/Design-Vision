@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { motion } from "framer-motion"
 import { useTranslation } from 'react-i18next'
 import Button from '../Button';
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function ProjectsPage() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   function handleExpand() {
     setIsExpanded((prev) => !prev)
@@ -49,8 +50,8 @@ function ProjectsPage() {
           <h2 className='text-xl mb-3 font-medium'>{project.title}</h2>
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
           <p className='text-sm mb-5'>{project.description}</p>
-          <a href={project.link} target='blank' className='text-sm text-indigo-500 lg:hover:text-indigo-400'>
-          {t('projects.visitHere')}
+          <a href={project.link} target='blank' className='flex flex-row justify-center items-center text-sm text-indigo-500 lg:hover:text-indigo-400'>
+          <FaExternalLinkAlt className={`${i18n.language === "ku" || i18n.language === "ar" ? "ml-2" : "mr-2"}`}/> {t('projects.visitHere')}
           </a>
         </div>
     ))
