@@ -17,7 +17,7 @@ function ProjectsPage() {
 
   return (
     <motion.div 
-    className='mt-20 md:mt-15 mx-auto px-4 max-w-6xl w-[93%] lg:w-full mb-15 lg:mb-20'
+    className='mt-20 md:mt-15 mx-auto px-4 max-w-6xl w-[85%] lg:w-[80%] mb-15 lg:mb-20'
     initial={{ opacity: 0, y:30 }}
     whileInView={{ opacity: 1, y:0 }}
     viewport={{once: true}}
@@ -38,14 +38,14 @@ function ProjectsPage() {
       {isExpanded ? 
       (projectsList.slice().map((project, index) => (
           <div key={index} className='items-center justify-center text-center h-auto mt-10 bg-gray-800 rounded-xl cursor-pointer pb-5 group overflow-hidden'>
-          <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.080] md:hover:transition-transform duration-400 ease-in-out'/>
+          <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.060] md:hover:transition-transform duration-400 ease-in-out'/>
           <h2 className='text-xl mb-3 font-medium'>{project.title}</h2>
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
           <p className='text-sm'>{project.description}</p>
         </div>
     ))) : (projectsList.slice(0, Math.ceil(projectsList.length / 2)).map((project, index) => (
           <div key={index} className='items-center justify-center text-center h-auto mt-10 bg-gray-800 rounded-xl cursor-pointer pb-5 group overflow-hidden'>
-          <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.080] md:hover:transition-transform duration-400 ease-in-out'/>
+          <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.060] md:hover:transition-transform duration-400 ease-in-out'/>
           <h2 className='text-xl mb-3 font-medium'>{project.title}</h2>
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
           <p className='text-sm'>{project.description}</p>

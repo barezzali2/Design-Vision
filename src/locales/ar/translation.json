@@ -179,93 +179,93 @@
 
    "projects": {
 
-        "title": "Our Cutting Edge Projects",
-        "subTitle": "Explore our different projects with having an exclusive vision.",
+        "title": "مشاريعنا الرائدة",
+        "subTitle": "استكشف مشاريعنا المختلفة برؤية حصرية.",
 
         "projectsList": [
             {
                 "image": "/assets/gd1.jpg",
-                "title": "German Course",
-                "field": "Graphic Design",
-                "description": "Choose us. You will not regret!"
+                "title": "دورة اللغة الألمانية",
+                "field": "التصميم الجرافيكي",
+                "description": "اخترنا. لن تندم!"
             },
               
             {
                 "image": "/assets/gd2.jpg",
-                "title": "German Gold",
-                "field": "Graphic Design",
-                "description": "Design with our golden hands"
+                "title": "الذهب الألماني",
+                "field": "التصميم الجرافيكي",
+                "description": "تصميم بأيدينا الذهبية"
             },
 
             {
                 "image": "/assets/gd3.jpg",
-                "title": "Halbast",
-                "field": "Graphic Design",
-                "description": "This filter resolves all your problems"
+                "title": "هةلبةست",
+                "field": "التصميم الجرافيكي",
+                "description": "هذا الفلتر يحل جميع مشاكلك"
             },
 
             {
                 "image": "/assets/uxui1.png",
-                "title": "GeTicket UI Design",
-                "field": "UX/UI Design",
-                "description": "Book your ticket in home"
+                "title": "GeTicket تصميم واجهة المستخدم",
+                "field": "تصميم تجربة المستخدم/واجهة المستخدم",
+                "description": "احجز تذكرتك من المنزل"
             },
 
             {
                 "image": "/assets/uxui2.png",
-                "title": "Glamour Galaxy UI Design",
-                "field": "UX/UI Design",
-                "description": "Explore different styles"
+                "title": "Glamour Galaxy تصميم واجهة المستخدم",
+                "field": "تصميم تجربة المستخدم/واجهة المستخدم",
+                "description": "استكشف أنماطًا مختلفة"
             },
 
 
             {
                 "image": "/assets/uxui.png",
-                "title": "BUSULEY UI Design",
-                "field": "UX/UI Design",
-                "description": "Track real-time transportations"
+                "title": "BUSULEY تصميم واجهة المستخدم",
+                "field": "تصميم تجربة المستخدم/واجهة المستخدم",
+                "description": "تتبع عمليات النقل في الوقت الفعلي"
             },
 
             {
                 "image": "/assets/web.png",
-                "title": "RetailXplore Project",
-                "field": "Web Development",
-                "description": "Facilitating shopping experiences"
+                "title": "RetailXplore مشروع",
+                "field": "تطوير مواقع الويب",
+                "description": "تسهيل تجارب التسوق"
             },
 
             {
                 "image": "/assets/web2.png",
-                "title": "Almoda Project",
-                "field": "Web Development",
+                "title": "Almoda مشروع",
+                "field": "تطوير مواقع الويب",
                 "description": "Explore different brands"
             },
 
             {
                 "image": "/assets/web3.png",
-                "title": "Pathway to Productivity",
-                "field": "Web Development",
-                "description": "Engaging and interactive animations"
+                "title": "Pathway to Productivity مشروع",
+                "field": "تطوير مواقع الويب",
+                "description": "رسوم متحركة جذابة وتفاعلية"
             },
 
             {
                 "image": "/assets/logo1.jpg",
-                "title": "Kraft Logo",
-                "field": "Logo Design",
-                "description": "The best logo ever"
+                "title": "Kraft الشعار",
+                "field": "تصميم الشعار",
+                "description": "أفضل شعار على الإطلاق"
             },
 
             {
                 "image": "/assets/logo2.png",
-                "title": "Almoda Logo",
-                "field": "Logo Design",
-                "description": "This is something different"
+                "title": "Almoda الشعار",
+                "field": "تصميم الشعار",
+                "description": "هذا شيء مختلف"
             },
 
             {
                 "image": "/assets/logo3.jpg",
-                "title": "BRST Company Logo",
-                "field": "Logo Design",
-                "description": "This is amazing"
+                "title": "BRST Company الشعار",
+                "field": "تصميم الشعار",
+                "description": "هذا مذهل"
             }
 
         ],
