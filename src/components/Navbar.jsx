@@ -8,9 +8,8 @@ function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [openLangList, setOpenLangList] = useState(false);
     const { t, i18n } = useTranslation();
-    // const isRTL = i18n.dir() === 'rtl';
-
     const dropDownRef = useRef(null);
+
 
 
     useEffect(() => {
@@ -42,7 +41,8 @@ function Navbar() {
     }
 
   return (
-    <div className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 items-center flex-wrap justify-between px-10 lg:px-15`}>
+    <div 
+    className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 items-center flex-wrap justify-between px-10 lg:px-15`}>
             <Logo />
 
 
@@ -196,7 +196,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/"
-                className="text-xl font-semibold text-white transition-colors"
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.home')}
@@ -206,7 +206,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/services"
-                className="text-xl font-semibold text-white transition-colors"
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.services')}
@@ -216,7 +216,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/projects"
-                className="text-xl font-semibold text-white transition-colors"
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.projects')}
@@ -226,7 +226,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/about"
-                className="text-xl font-semibold text-white transition-colors"
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.about')}
@@ -236,7 +236,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/contact"
-                className="text-xl font-semibold text-white transition-colors"
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.contact')}
