@@ -196,7 +196,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/"
-                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.home')}
@@ -206,7 +206,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/services"
-                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.services')}
@@ -216,7 +216,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/projects"
-                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.projects')}
@@ -226,7 +226,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/about"
-                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.about')}
@@ -236,7 +236,7 @@ function Navbar() {
             <li>
                 <NavLink 
                 to="/contact"
-                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400 border-b-2 p-1" : "none"}`}
+                className= {({isActive}) => `text-xl font-semibold transition-colors ${isActive ? "text-indigo-400" : "none"}`}
                 onClick={handleSetMenu}
                 >
                     {t('nav.contact')}
