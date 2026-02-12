@@ -187,35 +187,40 @@
                 "image": "/assets/gd1.jpg",
                 "title": "دورة اللغة الألمانية",
                 "field": "التصميم الجرافيكي",
-                "description": "اخترنا. لن تندم!"
+                "description": "اخترنا. لن تندم!",
+                "link": "https://www.behance.net/designvisionn"
             },
               
             {
                 "image": "/assets/gd2.jpg",
                 "title": "الذهب الألماني",
                 "field": "التصميم الجرافيكي",
-                "description": "تصميم بأيدينا الذهبية"
+                "description": "تصميم بأيدينا الذهبية",
+                "link": "https://www.behance.net/designvisionn"
             },
 
             {
                 "image": "/assets/gd3.jpg",
                 "title": "هةلبةست",
                 "field": "التصميم الجرافيكي",
-                "description": "هذا الفلتر يحل جميع مشاكلك"
+                "description": "هذا الفلتر يحل جميع مشاكلك",
+                "link": "https://www.behance.net/gallery/206535783/Halbast-Shop"
             },
 
             {
                 "image": "/assets/uxui1.png",
                 "title": "GeTicket تصميم واجهة المستخدم",
                 "field": "تصميم تجربة المستخدم/واجهة المستخدم",
-                "description": "احجز تذكرتك من المنزل"
+                "description": "احجز تذكرتك من المنزل",
+                "link": "https://www.behance.net/gallery/219241073/GeTicket-App"
             },
 
             {
                 "image": "/assets/uxui2.png",
                 "title": "Glamour Galaxy تصميم واجهة المستخدم",
                 "field": "تصميم تجربة المستخدم/واجهة المستخدم",
-                "description": "استكشف أنماطًا مختلفة"
+                "description": "استكشف أنماطًا مختلفة",
+                "link": "https://www.figma.com/design/DmWnl6wSGDdYW8VAE07IeI/Untitled?node-id=0-1&p=f&t=OgsPPfFFDbnbLBzm-0"
             },
 
 
@@ -223,55 +228,63 @@
                 "image": "/assets/uxui.png",
                 "title": "BUSULEY تصميم واجهة المستخدم",
                 "field": "تصميم تجربة المستخدم/واجهة المستخدم",
-                "description": "تتبع عمليات النقل في الوقت الفعلي"
+                "description": "تتبع عمليات النقل في الوقت الفعلي",
+                "link": "https://www.behance.net/gallery/215668303/BUSULEY-APP"
             },
 
             {
                 "image": "/assets/web.png",
                 "title": "RetailXplore مشروع",
                 "field": "تطوير مواقع الويب",
-                "description": "تسهيل تجارب التسوق"
+                "description": "تسهيل تجارب التسوق",
+                "link": "https://retailxplore.vercel.app/"
             },
 
             {
                 "image": "/assets/web2.png",
                 "title": "Almoda مشروع",
                 "field": "تطوير مواقع الويب",
-                "description": "Explore different brands"
+                "description": "Explore different brands",
+                "link": "https://almoda.vercel.app/"
             },
 
             {
                 "image": "/assets/web3.png",
                 "title": "Pathway to Productivity مشروع",
                 "field": "تطوير مواقع الويب",
-                "description": "رسوم متحركة جذابة وتفاعلية"
+                "description": "رسوم متحركة جذابة وتفاعلية",
+                "link": "https://commercial-web-test.vercel.app/"
             },
 
             {
                 "image": "/assets/logo1.jpg",
                 "title": "Kraft الشعار",
                 "field": "تصميم الشعار",
-                "description": "أفضل شعار على الإطلاق"
+                "description": "أفضل شعار على الإطلاق",
+                "link": "https://www.behance.net/designvisionn"
             },
 
             {
                 "image": "/assets/logo2.png",
                 "title": "Almoda الشعار",
                 "field": "تصميم الشعار",
-                "description": "هذا شيء مختلف"
+                "description": "هذا شيء مختلف",
+                "link": "https://www.behance.net/designvisionn"
             },
 
             {
                 "image": "/assets/logo3.jpg",
                 "title": "BRST Company الشعار",
                 "field": "تصميم الشعار",
-                "description": "هذا مذهل"
+                "description": "هذا مذهل",
+                "link": "https://www.behance.net/gallery/201401991/Brst-Company"
             }
 
         ],
 
     "showMoreButton": "عرض المزيد",
-    "showLessButton": "عرض أقل"
+    "showLessButton": "عرض أقل",
+    "visitHere": "قم بزيارة الموقع من هنا..."
 
     },
 

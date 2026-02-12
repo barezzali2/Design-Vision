@@ -48,7 +48,10 @@ function ProjectsPage() {
           <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.060] md:hover:transition-transform duration-400 ease-in-out'/>
           <h2 className='text-xl mb-3 font-medium'>{project.title}</h2>
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
-          <p className='text-sm'>{project.description}</p>
+          <p className='text-sm mb-5'>{project.description}</p>
+          <a href={project.link} target='blank' className='text-sm text-indigo-500 lg:hover:text-indigo-400'>
+          {t('projects.visitHere')}
+          </a>
         </div>
     ))
     )

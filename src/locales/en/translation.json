@@ -191,35 +191,40 @@
                 "image": "/assets/gd1.jpg",
                 "title": "German Course",
                 "field": "Graphic Design",
-                "description": "Choose us. You will not regret!"
+                "description": "Choose us. You will not regret!",
+                "link": "https://www.behance.net/designvisionn"
             },
               
             {
                 "image": "/assets/gd2.jpg",
                 "title": "German Gold",
                 "field": "Graphic Design",
-                "description": "Design with our golden hands"
+                "description": "Design with our golden hands",
+                "link": "https://www.behance.net/designvisionn"
             },
 
             {
                 "image": "/assets/gd3.jpg",
                 "title": "Halbast",
                 "field": "Graphic Design",
-                "description": "This filter resolves all your problems"
+                "description": "This filter resolves all your problems",
+                "link": "https://www.behance.net/gallery/206535783/Halbast-Shop"
             },
 
             {
                 "image": "/assets/uxui1.png",
                 "title": "GeTicket UI Design",
                 "field": "UX/UI Design",
-                "description": "Book your ticket in home"
+                "description": "Book your ticket in home",
+                "link": "https://www.behance.net/gallery/219241073/GeTicket-App"
             },
 
             {
                 "image": "/assets/uxui2.png",
                 "title": "Glamour Galaxy UI Design",
                 "field": "UX/UI Design",
-                "description": "Explore different styles"
+                "description": "Explore different styles",
+                "link": "https://www.figma.com/design/DmWnl6wSGDdYW8VAE07IeI/Untitled?node-id=0-1&p=f&t=OgsPPfFFDbnbLBzm-0"
             },
 
 
@@ -227,55 +232,63 @@
                 "image": "/assets/uxui.png",
                 "title": "BUSULEY UI Design",
                 "field": "UX/UI Design",
-                "description": "Track real-time transportations"
+                "description": "Track real-time transportations",
+                "link": "https://www.behance.net/gallery/215668303/BUSULEY-APP"
             },
 
             {
                 "image": "/assets/web.png",
                 "title": "RetailXplore Project",
                 "field": "Web Development",
-                "description": "Facilitating shopping experiences"
+                "description": "Facilitating shopping experiences",
+                "link": "https://retailxplore.vercel.app/"
             },
 
             {
                 "image": "/assets/web2.png",
                 "title": "Almoda Project",
                 "field": "Web Development",
-                "description": "Explore different brands"
+                "description": "Explore different brands",
+                "link": "https://almoda.vercel.app/"
             },
 
             {
                 "image": "/assets/web3.png",
                 "title": "Pathway to Productivity Project",
                 "field": "Web Development",
-                "description": "Engaging and interactive animations"
+                "description": "Engaging and interactive animations",
+                "link": "https://commercial-web-test.vercel.app/"
             },
 
             {
                 "image": "/assets/logo1.jpg",
                 "title": "Kraft Logo",
                 "field": "Logo Design",
-                "description": "The best logo ever"
+                "description": "The best logo ever",
+                "link": "https://www.behance.net/designvisionn"
             },
 
             {
                 "image": "/assets/logo2.png",
                 "title": "Almoda Logo",
                 "field": "Logo Design",
-                "description": "This is something different"
+                "description": "This is something different",
+                "link": "https://www.behance.net/designvisionn"
             },
 
             {
                 "image": "/assets/logo3.jpg",
                 "title": "BRST Company Logo",
                 "field": "Logo Design",
-                "description": "This is amazing"
+                "description": "This is amazing",
+                "link": "https://www.behance.net/gallery/201401991/Brst-Company"
             }
 
         ],
 
         "showMoreButton": "Show More",
-        "showLessButton": "Show Less"
+        "showLessButton": "Show Less",
+        "visitHere": "Visit through here..."
 
     },
 
