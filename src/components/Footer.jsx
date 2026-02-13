@@ -23,7 +23,7 @@ function Footer() {
           <div className="flex flex-col items-center space-y-5 mb-7">
             <a href="#" className="flex items-center space-x-2 text-gray-200 hover:text-gray-800 transition-colors md:hover:text-violet-500">
               <MdOutlineMail className="text-xl" />
-              <span>design.vision25@gmail.com</span>
+              <span>design.vision20@gmail.com</span>
             </a>
             <a href="#" className="flex items-center space-x-2 text-gray-200 hover:text-gray-800 transition-colors md:hover:text-violet-500">
               <LuPhoneCall className="text-xl" />
@@ -37,13 +37,13 @@ function Footer() {
           
           {/* Social Media Icons */}
           <div className="flex justify-center space-x-6">
-            <a href="#" className="text-3xl hover:text-pink-700 cursor-pointer md:text-4xl md:hover:transform-[scale(1.2)] md:transition-all duration-250 ease-in-out">
+            <a href="https://www.instagram.com/dv__agency?igsh=MTR6MnZsMzdieWthYw==" target="blank" className="text-3xl hover:text-pink-700 cursor-pointer md:text-4xl md:hover:transform-[scale(1.2)] md:transition-all duration-250 ease-in-out">
               <FaInstagram />
             </a>
-            <a href="#" className="text-3xl hover:text-blue-700 cursor-pointer md:text-4xl transition-colors md:hover:transform-[scale(1.2)] md:transition-all duration-250 ease-in-out">
+            <a href="https://www.facebook.com/share/1A6NvvJN54/" target="blank" className="text-3xl hover:text-blue-700 cursor-pointer md:text-4xl transition-colors md:hover:transform-[scale(1.2)] md:transition-all duration-250 ease-in-out">
               <FaFacebook />
             </a>
-            <a href="#" className="text-3xl text-white hover:text-pink-700 cursor-pointer md:text-4xl md:hover:transform-[scale(1.2)] md:transition-all duration-250 ease-in-out">
+            <a href="https://www.threads.com/?hl=en" target="blank" className="text-3xl text-white hover:text-pink-700 cursor-pointer md:text-4xl md:hover:transform-[scale(1.2)] md:transition-all duration-250 ease-in-out">
               <SiThreads />
             </a>
           </div>
