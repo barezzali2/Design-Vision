@@ -42,7 +42,7 @@ function Navbar() {
 
   return (
     <div 
-    className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 items-center flex-wrap justify-between px-10 lg:px-15`}>
+    className={`flex flex-row backdrop-blur-md bg-[#1220301f] sticky top-0 w-full z-11 items-center flex-wrap justify-between px-10 lg:px-18`}>
             <Logo />
 
 
