@@ -42,7 +42,10 @@ function ProjectsPage() {
           <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.060] md:hover:transition-transform duration-400 ease-in-out'/>
           <h2 className='text-xl mb-3 font-medium'>{project.title}</h2>
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
-          <p className='text-sm'>{project.description}</p>
+          <p className='text-sm mb-5'>{project.description}</p>
+          <a href={project.link} target='blank' className='flex flex-row justify-center items-center text-sm text-indigo-500 lg:hover:text-indigo-400'>
+          <FaExternalLinkAlt className={`${i18n.language === "ku" || i18n.language === "ar" ? "ml-2" : "mr-2"}`}/> {t('projects.visitHere')}
+          </a>
         </div>
     ))) : (projectsList.slice(0, Math.ceil(projectsList.length / 2)).map((project, index) => (
           <div key={index} className='items-center justify-center text-center h-auto mt-10 bg-gray-800 rounded-xl cursor-pointer pb-5 group overflow-hidden'>
