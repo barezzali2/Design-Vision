@@ -204,6 +204,30 @@
             },
 
             {
+                "image": "/assets/gd1.jpg",
+                "title": "German Course",
+                "field": "Graphic Design",
+                "description": "Choose us. You will not regret!",
+                "link": "https://www.behance.net/designvisionn"
+            },
+
+            {
+                "image": "/assets/gd1.jpg",
+                "title": "German Course",
+                "field": "Graphic Design",
+                "description": "Choose us. You will not regret!",
+                "link": "https://www.behance.net/designvisionn"
+            },
+
+            {
+                "image": "/assets/gd3.jpg",
+                "title": "Halbast",
+                "field": "Graphic Design",
+                "description": "This filter resolves all your problems",
+                "link": "https://www.behance.net/gallery/206535783/Halbast-Shop"
+            },
+
+             {
                 "image": "/assets/gd3.jpg",
                 "title": "Halbast",
                 "field": "Graphic Design",
@@ -261,6 +285,14 @@
             },
 
             {
+                "image": "/assets/web3.png",
+                "title": "Pathway to Productivity Project",
+                "field": "Web Development",
+                "description": "Engaging and interactive animations",
+                "link": "https://commercial-web-test.vercel.app/"
+            },
+
+            {
                 "image": "/assets/logo1.jpg",
                 "title": "Kraft Logo",
                 "field": "Logo Design",
@@ -274,6 +306,14 @@
                 "field": "Logo Design",
                 "description": "This is something different",
                 "link": "https://www.behance.net/designvisionn"
+            },
+
+            {
+                "image": "/assets/logo3.jpg",
+                "title": "BRST Company Logo",
+                "field": "Logo Design",
+                "description": "This is amazing",
+                "link": "https://www.behance.net/gallery/201401991/Brst-Company"
             },
 
             {
@@ -363,7 +403,7 @@
         "services": "Explore Services",
         "offers": "Special Offers",
 
-        "copyright": "© 2025 DesignVision. All rights reserved."
+        "copyright": "© 2026 DesignVision. All rights reserved."
         
     }
     
