@@ -51,7 +51,7 @@ function Navbar() {
                 <li>
                 <NavLink 
                 to="/"
-                className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                className={({ isActive }) => `text-[18px] font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                 // fixing the space between them
                 >
                     {t('nav.home')}
@@ -61,7 +61,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/services"
-                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                    className={({ isActive }) => `text-[18px] font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
                         {t('nav.services')}
                     </NavLink>
@@ -70,7 +70,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/projects"
-                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                    className={({ isActive }) => `text-[18px] font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
                         {t('nav.projects')}
                     </NavLink>
@@ -79,7 +79,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/about"
-                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                    className={({ isActive }) => `text-[18px] font-semibold hover:text-indigo-400 transition duration-200 pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
                         {t('nav.about')}
                     </NavLink>
@@ -88,7 +88,7 @@ function Navbar() {
                 <li>
                     <NavLink 
                     to="/contact"
-                    className={({ isActive }) => `text-xl font-semibold hover:text-indigo-400 transition duration-200  pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
+                    className={({ isActive }) => `text-[18px] font-semibold hover:text-indigo-400 transition duration-200  pb-2 ${isActive ? "text-indigo-400 border-b-2" : "none"}`}
                     >
                     {t('nav.contact')}
                     </NavLink>
