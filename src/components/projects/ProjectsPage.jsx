@@ -47,7 +47,7 @@ function ProjectsPage() {
 
   return (
     <motion.div 
-    className='mt-20 md:mt-15 mx-auto px-4 max-w-6xl w-[85%] lg:w-[80%] mb-15 lg:mb-20'
+    className='mt-20 md:mt-15 mx-auto px-4 max-w-6xl w-[95%] lg:w-[80%] mb-15 lg:mb-20'
     initial={{ opacity: 0, y:30 }}
     whileInView={{ opacity: 1, y:0 }}
     viewport={{once: true}}
@@ -65,7 +65,7 @@ function ProjectsPage() {
 
 
     <>
-          <div className='text-[10.5px] lg:text-[16px] lg:block lg:mt-5 lg:items-center'>
+          <div className='text-[12.5px] lg:text-[16px] lg:block lg:mt-5 lg:items-center'>
           {filterTypes.map((type) => (
           <button 
           className={`border-1 border-indigo-400 cursor-pointer hover:bg-[#0b101b] p-2 md:p-3 px-3 rounded-md m-7 ${state.selectedType === type ? "bg-[#070b13] text-white" : "bg-[#11192a] text-gray-200"}`}
