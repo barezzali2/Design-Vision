@@ -54,7 +54,7 @@ function ProjectsPage() {
     transition={{duration: 1.4}}
     >
 
-      <header className='text-center mb-12'>
+      <header className='text-center mb-12 mx-4'>
         <h1 className='text-[25px] md:text-4xl font-extrabold text-white mb-6'>
           {t('projects.title')}
         </h1>
@@ -65,7 +65,7 @@ function ProjectsPage() {
 
 
     <>
-          <div className='text-[12.5px] lg:text-[16px] lg:block lg:mt-5 lg:items-center'>
+          <div className='text-[13px] lg:text-[16px] lg:block lg:mt-5 lg:items-center'>
           {filterTypes.map((type) => (
           <button 
           className={`border-1 border-indigo-400 cursor-pointer hover:bg-[#0b101b] p-2 md:p-3 px-3 rounded-md m-7 ${state.selectedType === type ? "bg-[#070b13] text-white" : "bg-[#11192a] text-gray-200"}`}
@@ -76,7 +76,7 @@ function ProjectsPage() {
             ))}
         </div>
 
-    <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-20 mb-20 lg:mb-20'>
+    <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-20 mb-20 lg:mb-20 max-w-[85%] mx-auto md:max-w-[90%]'>
        {visibleProjects.map((project, index) => (
         <div key={index} className='items-center justify-center text-center h-auto mt-10 bg-gray-800 rounded-xl cursor-pointer pb-5 group overflow-hidden'>
           <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.060] md:hover:transition-transform duration-600 ease-in-out'/>
