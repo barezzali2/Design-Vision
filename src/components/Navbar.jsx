@@ -99,7 +99,7 @@ function Navbar() {
             {/* <div className="flex justify-center"> */}
             <div 
             ref={dropDownRef}
-            className='hidden lg:relative lg:flex lg:justify-center'>
+            className='hidden md:relative md:flex md:justify-center'>
                 
             <button 
             className='cursor-pointer' 

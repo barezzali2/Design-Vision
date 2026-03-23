@@ -65,49 +65,21 @@ function ProjectsPage() {
 
 
     <>
-          <div className='mt-5 items-center'>
+          <div className='text-[10.5px] lg:text-[16px] lg:block lg:mt-5 lg:items-center'>
           {filterTypes.map((type) => (
           <button 
-          className={`cursor-pointer bg-gray-800 text-gray-200 hover:bg-gray-900 p-3 px-3 rounded-md m-7 ${state.selectedType === type ? "bg-gray-900 text-white" : "none"}`}
+          className={`border-1 border-indigo-400 cursor-pointer hover:bg-[#0b101b] p-2 md:p-3 px-3 rounded-md m-7 ${state.selectedType === type ? "bg-[#070b13] text-white" : "bg-[#11192a] text-gray-200"}`}
           onClick={() => handleFilter(type)}
           >
             {type === "all" ? i18n.language === "en" && "All" || i18n.language === "ar" && "کل" || i18n.language === "ku" && "هەموو" : type}
           </button>
             ))}
-
-          {/* <button 
-          className='cursor-pointer bg-gray-800 text-gray-200 hover:bg-gray-700 p-3 rounded-md m-7'
-          onClick={() => handleFilter("Graphic Design")}
-          >
-            Graphic Design
-          </button>
-
-          <button 
-          className='cursor-pointer bg-gray-800 text-gray-200 hover:bg-gray-700 p-3 rounded-md m-7'
-          onClick={() => handleFilter("UX/UI Design")}
-          >
-            UX/UI Design
-          </button>
-
-          <button 
-          className='cursor-pointer bg-gray-800 text-gray-200 hover:bg-gray-700 p-3 rounded-md m-7'
-          onClick={() => handleFilter("Web Development")}
-          >
-            Web Development
-            </button>
-
-          <button 
-          className='cursor-pointer bg-gray-800 text-gray-200 hover:bg-gray-700 p-3 rounded-md m-7'
-          onClick={() => handleFilter("Logo Design")}
-          >
-            Logo Design
-          </button> */}
         </div>
 
     <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-20 mb-20 lg:mb-20'>
        {visibleProjects.map((project, index) => (
         <div key={index} className='items-center justify-center text-center h-auto mt-10 bg-gray-800 rounded-xl cursor-pointer pb-5 group overflow-hidden'>
-          <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.060] md:hover:transition-transform duration-400 ease-in-out'/>
+          <img src={project.image} alt={index} className='mx-auto mb-6 rounded-t-xl md:group-hover:scale-[1.060] md:hover:transition-transform duration-600 ease-in-out'/>
           <h2 className='text-xl mb-3 font-medium'>{project.title}</h2>
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
           <a href={project.link} target='blank' className='flex flex-row justify-center items-center text-sm text-indigo-500 lg:hover:text-indigo-400'>
