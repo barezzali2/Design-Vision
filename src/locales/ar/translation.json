@@ -199,12 +199,36 @@
                 "link": "https://www.behance.net/designvisionn"
             },
 
+             {
+                "image": "/assets/uos.jpg",
+                "title": "مناسبة جامعة السلیمانیة",
+                "field": "التصميم الجرافيكي",
+                "description": "تصمیم لجامحة السلیمانیـة!",
+                "link": "https://www.behance.net/gallery/175638231/University-Of-Slemani-Poster"
+            },
+
             {
                 "image": "/assets/gd3.jpg",
                 "title": "هةلبةست",
                 "field": "التصميم الجرافيكي",
                 "description": "هذا الفلتر يحل جميع مشاكلك",
                 "link": "https://www.behance.net/gallery/206535783/Halbast-Shop"
+            },
+
+            {
+                "image": "/assets/hiwatrav.jpg",
+                "title": "هیوا ترافل",
+                "field": "التصميم الجرافيكي",
+                "description": "استمتع برحلتك معنا!",
+                "link": "https://www.behance.net/gallery/161504031/Travel-Agency-Social-Media-Posts"
+            },
+
+             {
+                "image": "/assets/gd6.jpg",
+                "title": "ئیدیشن",
+                "field": "التصميم الجرافيكي",
+                "description": "اترك سجادك هنا",
+                "link": "https://www.behance.net/gallery/161503725/Edition-Services"
             },
 
             {

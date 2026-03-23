@@ -195,11 +195,35 @@
             },
 
             {
+                "image": "/assets/uos.jpg",
+                "title": "ئێڤێنتی زانکۆی سلێمانی",
+                "field": "گرافیک دیزاین",
+                "description": "دیزاینی ئیڤێنتێی زانکۆی سلێمانی!",
+                "link": "https://www.behance.net/gallery/175638231/University-Of-Slemani-Poster"
+            },
+
+            {
                 "image": "/assets/gd3.jpg",
                 "title": "هەڵبەست",
                 "field": "گرافیک دیزاین",
                 "description": "ئەم فیلتەرە تەواوی کێشەکانت چارەسەر دەکات.",
                 "link": "https://www.behance.net/gallery/206535783/Halbast-Shop"
+            },
+
+            {
+                "image": "/assets/hiwatrav.jpg",
+                "title": "هیوا تراڤڵ",
+                "field": "گرافیک دیزاین",
+                "description": "چێژ لەگەشتەکەت ببینە لەگەڵ ئێمە!",
+                "link": "https://www.behance.net/gallery/161504031/Travel-Agency-Social-Media-Posts"
+            },
+
+             {
+                "image": "/assets/gd6.jpg",
+                "title": "ئێدیشن",
+                "field": "گرافیک دیزاین",
+                "description": "فەرش و کومبارەکەت بەئێمە بسپێرە",
+                "link": "https://www.behance.net/gallery/161503725/Edition-Services"
             },
 
             {

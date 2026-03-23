@@ -204,19 +204,11 @@
             },
 
             {
-                "image": "/assets/gd1.jpg",
-                "title": "German Course",
+                "image": "/assets/uos.jpg",
+                "title": "UOS Event",
                 "field": "Graphic Design",
-                "description": "Choose us. You will not regret!",
-                "link": "https://www.behance.net/designvisionn"
-            },
-
-            {
-                "image": "/assets/gd1.jpg",
-                "title": "German Course",
-                "field": "Graphic Design",
-                "description": "Choose us. You will not regret!",
-                "link": "https://www.behance.net/designvisionn"
+                "description": "Design for Universiy of Suli!",
+                "link": "https://www.behance.net/gallery/175638231/University-Of-Slemani-Poster"
             },
 
             {
@@ -225,15 +217,24 @@
                 "field": "Graphic Design",
                 "description": "This filter resolves all your problems",
                 "link": "https://www.behance.net/gallery/206535783/Halbast-Shop"
+            },
+
+            {
+                "image": "/assets/hiwatrav.jpg",
+                "title": "Hiwa Travel",
+                "field": "Graphic Design",
+                "description": "Enjoy your travel with us!",
+                "link": "https://www.behance.net/gallery/161504031/Travel-Agency-Social-Media-Posts"
             },
 
              {
-                "image": "/assets/gd3.jpg",
-                "title": "Halbast",
+                "image": "/assets/gd6.jpg",
+                "title": "Edition",
                 "field": "Graphic Design",
-                "description": "This filter resolves all your problems",
-                "link": "https://www.behance.net/gallery/206535783/Halbast-Shop"
+                "description": "Leave your carpets here",
+                "link": "https://www.behance.net/gallery/161503725/Edition-Services"
             },
+
 
             {
                 "image": "/assets/uxui1.png",
@@ -284,13 +285,7 @@
                 "link": "https://commercial-web-test.vercel.app/"
             },
 
-            {
-                "image": "/assets/web3.png",
-                "title": "Pathway to Productivity Project",
-                "field": "Web Development",
-                "description": "Engaging and interactive animations",
-                "link": "https://commercial-web-test.vercel.app/"
-            },
+          
 
             {
                 "image": "/assets/logo1.jpg",
@@ -306,14 +301,6 @@
                 "field": "Logo Design",
                 "description": "This is something different",
                 "link": "https://www.behance.net/designvisionn"
-            },
-
-            {
-                "image": "/assets/logo3.jpg",
-                "title": "BRST Company Logo",
-                "field": "Logo Design",
-                "description": "This is amazing",
-                "link": "https://www.behance.net/gallery/201401991/Brst-Company"
             },
 
             {
