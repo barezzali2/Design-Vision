@@ -175,6 +175,8 @@
     "projects": {
         "title": "پڕۆژە جیاوازەکانمان",
         "subTitle": "بەناو پڕۆژە جیاوازەکانماندا بگەڕێ بە دیدگایەکی تایبەتەوە.",
+        "filterButton": "فلتەر",
+        "filterTypesHeading": "جۆری فلتەر",
 
         
                 "projectsList": [

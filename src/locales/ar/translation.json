@@ -181,6 +181,8 @@
 
         "title": "مشاريعنا الرائدة",
         "subTitle": "استكشف مشاريعنا المختلفة برؤية حصرية.",
+        "filterButton": "فلتر",
+        "filterTypesHeading": "أنواع الفلتر",
 
         "projectsList": [
             {

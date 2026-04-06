@@ -185,6 +185,8 @@
     "projects": {
         "title": "Our Cutting Edge Projects",
         "subTitle": "Explore our different projects with having an exclusive vision.",
+        "filterButton": "Filter",
+        "filterTypesHeading": "Filter Types",
 
         "projectsList": [
             {
