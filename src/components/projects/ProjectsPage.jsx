@@ -1,8 +1,8 @@
-import React, { useReducer, useState } from 'react'
+import React, { useEffect, useReducer, useRef, useState } from 'react'
 import { motion } from "framer-motion"
 import { useTranslation } from 'react-i18next'
 import Button from '../Button';
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaFilter } from "react-icons/fa";
 
 
   const initialState = {
@@ -24,8 +24,10 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 function ProjectsPage() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const [state, dispatch] = useReducer(projectsReducer, initialState)
+  const currentLang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
   
 
   function handleExpand() {
@@ -35,8 +37,18 @@ function ProjectsPage() {
   function handleFilter(filterType) {
     dispatch({ type: 'filter', payload: filterType});
     setIsExpanded(false);
+    setIsFilterOpen(false);
   }
 
+  function toggleFilterPanel() {
+    setIsFilterOpen((prev) => !prev)
+  }
+
+  const getTypeLabel = (type) => (
+    type === "all"
+      ? currentLang === "en" && "All" || currentLang === "ar" && "کل" || currentLang === "ku" && "هەموو"
+      : type
+  );
 
   const projectListObj = t('projects.projectsList', {returnObjects: true})
   const projectsList = Object.values(projectListObj);
@@ -65,16 +77,54 @@ function ProjectsPage() {
 
 
     <>
-          <div className='text-[13px] lg:text-[16px] lg:block lg:mt-5 lg:items-center'>
-          {filterTypes.map((type) => (
-          <button 
-          className={`border-1 border-indigo-400 cursor-pointer hover:bg-[#0b101b] p-2 md:p-3 px-3 rounded-md m-7 ${state.selectedType === type ? "bg-[#070b13] text-white" : "bg-[#11192a] text-gray-200"}`}
-          onClick={() => handleFilter(type)}
-          >
-            {type === "all" ? i18n.language === "en" && "All" || i18n.language === "ar" && "کل" || i18n.language === "ku" && "هەموو" : type}
-          </button>
-            ))}
+
+      {/* Filter panel (mobile + tablet) */}
+      <div className='lg:hidden w-[90%] md:w-[70%] mx-auto relative'>
+        <button
+          type='button'
+          onClick={toggleFilterPanel}
+          aria-expanded={isFilterOpen}
+          className='w-full md:w-auto mx-auto flex items-center justify-center gap-3 bg-indigo-500 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-indigo-400 transition'
+        >
+          <FaFilter className='text-sm' />
+          {t('projects.filterButton')}
+        </button>
+
+        <div
+          className={`absolute left-0 right-0 top-full mt-4 z-20 transform transition-all duration-200 ${isFilterOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}`}
+        >
+          <div className='bg-[#0c1220] border border-indigo-400/40 rounded-3xl p-6 md:p-8 shadow-lg'>
+            <h3 className='text-white text-lg font-semibold mb-4'>
+              {t('projects.filterTypesHeading')}
+            </h3>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+              {filterTypes.map((type) => (
+                <button
+                  key={type}
+                  type='button'
+                  onClick={() => handleFilter(type)}
+                  className={`w-full text-left px-4 py-3 rounded-2xl border transition ${state.selectedType === type ? "bg-indigo-500 text-white border-indigo-400" : "bg-[#11192a] text-gray-200 border-transparent hover:border-indigo-400/40 hover:bg-[#0b101b]"}`}
+                >
+                  {getTypeLabel(type)}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
+      </div>
+
+      {/* Default filter options (large screens) */}
+      <div className='hidden lg:flex lg:flex-wrap lg:justify-center text-[13px] lg:text-[16px] lg:mt-5 lg:items-center'>
+        {filterTypes.map((type) => (
+          <button 
+            key={type}
+            className={`border-1 border-indigo-400 cursor-pointer hover:bg-[#0b101b] p-2 md:p-3 px-3 rounded-md m-7 ${state.selectedType === type ? "bg-[#070b13] text-white" : "bg-[#11192a] text-gray-200"}`}
+            onClick={() => handleFilter(type)}
+          >
+            {getTypeLabel(type)}
+          </button>
+        ))}
+      </div>
 
     <div className='grid grid-cols-1 md:grid md:grid-cols-3 gap-20 mb-20 lg:mb-20 max-w-[85%] mx-auto md:max-w-[90%]'>
        {visibleProjects.map((project, index) => (
@@ -83,7 +133,7 @@ function ProjectsPage() {
           <h2 className='text-xl mb-3 font-medium'>{project.title}</h2>
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
           <a href={project.link} target='blank' className='flex flex-row justify-center items-center text-sm text-indigo-500 lg:hover:text-indigo-400'>
-          <FaExternalLinkAlt className={`${i18n.language === "ku" || i18n.language === "ar" ? "ml-2" : "mr-2"}`}/> {t('projects.visitHere')}
+          <FaExternalLinkAlt className={`${currentLang === "ku" || currentLang === "ar" ? "ml-2" : "mr-2"}`}/> {t('projects.visitHere')}
           </a>
         </div>
        ))
@@ -97,7 +147,7 @@ function ProjectsPage() {
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
           <p className='text-sm mb-5'>{project.description}</p>
           <a href={project.link} target='blank' className='flex flex-row justify-center items-center text-sm text-indigo-500 lg:hover:text-indigo-400'>
-          <FaExternalLinkAlt className={`${i18n.language === "ku" || i18n.language === "ar" ? "ml-2" : "mr-2"}`}/> {t('projects.visitHere')}
+          <FaExternalLinkAlt className={`${currentLang === "ku" || currentLang === "ar" ? "ml-2" : "mr-2"}`}/> {t('projects.visitHere')}
           </a>
         </div>
     ))) : (projectsList.slice(0, Math.ceil(projectsList.length / 2)).map((project, index) => (
@@ -107,7 +157,7 @@ function ProjectsPage() {
           <h4 className='text-[15px] mb-3'>{project.field}</h4>
           <p className='text-sm mb-5'>{project.description}</p>
           <a href={project.link} target='blank' className='flex flex-row justify-center items-center text-sm text-indigo-500 lg:hover:text-indigo-400'>
-          <FaExternalLinkAlt className={`${i18n.language === "ku" || i18n.language === "ar" ? "ml-2" : "mr-2"}`}/> {t('projects.visitHere')}
+          <FaExternalLinkAlt className={`${currentLang === "ku" || currentLang === "ar" ? "ml-2" : "mr-2"}`}/> {t('projects.visitHere')}
           </a>
         </div>
     ))
@@ -126,3 +176,4 @@ function ProjectsPage() {
 }
 
 export default ProjectsPage
+
