@@ -11,6 +11,17 @@ function Navbar() {
     const dropDownRef = useRef(null);
 
 
+    const currentLang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
+
+    useEffect(() => {
+        const savedLang = localStorage.getItem('i18nextLng');
+        if (!savedLang && currentLang) {
+            localStorage.setItem('i18nextLng', currentLang);
+        }
+    }, [currentLang]);
+
+
+
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -122,7 +133,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className={`cursor-pointer ${i18n.language === "en" ? "text-indigo-600" : "none"}`}
+                    className={`cursor-pointer ${currentLang === "en" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.english')}
                     </button>
@@ -137,7 +148,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className={`cursor-pointer ${i18n.language === "ku" ? "text-indigo-600" : "none"}`}
+                    className={`cursor-pointer ${currentLang === "ku" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.kurdish')}
                     </button>
@@ -151,7 +162,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className={`cursor-pointer ${i18n.language === "ar" ? "text-indigo-600" : "none"}`}
+                    className={`cursor-pointer ${currentLang === "ar" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.arabic')}
                     </button>
@@ -259,7 +270,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className={`cursor-pointer ${i18n.language === "en" ? "text-indigo-600" : "none"}`}
+                    className={`cursor-pointer ${currentLang === "en" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.english')}
                     </button>
@@ -274,7 +285,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className={`cursor-pointer ${i18n.language === "ku" ? "text-indigo-600" : "none"}`}
+                    className={`cursor-pointer ${currentLang === "ku" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.kurdish')}
                     </button>
@@ -288,7 +299,7 @@ function Navbar() {
                     }}
                 >
                     <button 
-                    className={`cursor-pointer ${i18n.language === "ar" ? "text-indigo-600" : "none"}`}
+                    className={`cursor-pointer ${currentLang === "ar" ? "text-indigo-600" : "none"}`}
                     >
                     {t('nav.arabic')}
                     </button>
