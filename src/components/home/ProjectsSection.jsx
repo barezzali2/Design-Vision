@@ -60,7 +60,7 @@ function ProjectsSection() {
 
         <motion.button
           onClick={handleSetExpanded}
-          className="hidden lg:inline-flex mt-8 mb-4 items-center gap-2 rounded-full border border-indigo-400/40  bg-gradient-to-r from-[#7835dc9b] to-sky-600 px-5 py-4 text-white font-semibold shadow-[0_8px_24px_rgba(79,70,229,0.35)] cursor-pointer hover:scale-[1.1] transition transform duration-400 "
+          className="hidden lg:inline-flex mt-8 mb-4 items-center gap-2 rounded-full border border-indigo-400/40  bg-gradient-to-r from-[#7835dc9b] to-sky-600 px-5 py-4 text-white font-semibold shadow-[0_8px_24px_rgba(79,70,229,0.35)] cursor-pointer transition transform duration-400 "
           aria-expanded={expanded}
           aria-label={expanded ? t('home-projects.resetButton') : t('home-projects.expandButton')}
           style={{
