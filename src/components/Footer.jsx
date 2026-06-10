@@ -25,10 +25,10 @@ function Footer() {
               <MdOutlineMail className="text-xl" />
               <span>designv.agency@gmail.com</span>
             </a>
-            <a href="#" className="flex items-center space-x-2 text-gray-200 hover:text-gray-800 transition-colors md:hover:text-violet-500">
+            {/* <a href="#" className="flex items-center space-x-2 text-gray-200 hover:text-gray-800 transition-colors md:hover:text-violet-500">
               <LuPhoneCall className="text-xl" />
               <span>+964 772 542 0063</span>
-            </a>
+            </a> */}
             <a href="#" className="flex items-center space-x-2 text-gray-200 hover:text-gray-800 transition-colors md:hover:text-violet-500">
               <IoLocationOutline className="text-xl" />
               <span>{t('footer.location')}</span>
