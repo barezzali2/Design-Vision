@@ -28,7 +28,7 @@ function Contact() {
 
         <div className="max-w-2xl mx-auto text-gray-500 space-y-4">
           <p><span className="font-semibold">{t('contact.emailLabel')}</span><a href="#">designv.agency@gmail.com</a></p>
-          <p><span className="font-semibold">{t('contact.phoneLabel')}</span> <a href="#">+964 772 542 0663</a></p>
+          {/* <p><span className="font-semibold">{t('contact.phoneLabel')}</span> <a href="#">+964 772 542 0663</a></p> */}
           <p><span className="font-semibold">{t('contact.locationLabel')} </span>{t('contact.location')}</p>
         </div>
 
