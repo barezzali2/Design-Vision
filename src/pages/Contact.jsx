@@ -53,7 +53,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="px-6 py-2 cursor-pointer bg-indigo-500 text-white rounded-md hover:bg-indigo-800 transition"
+            className="px-6 py-2 cursor-pointer bg-indigo-700 text-white rounded-md hover:bg-indigo-800 transition"
           >
             {t('contact.sendButton')}
           </button>

@@ -118,7 +118,7 @@ function ProjectsPage() {
         {filterTypes.map((type) => (
           <button 
             key={type}
-            className={`border-1 border-indigo-400 cursor-pointer hover:bg-[#0b101b] p-2 md:p-3 px-3 rounded-md m-7 ${state.selectedType === type ? "bg-[#070b13] text-white" : "bg-[#11192a] text-gray-200"}`}
+            className={`border-1 border-indigo-400 cursor-pointer hover:bg-indigo-800 p-2 md:p-3 px-3 rounded-md m-7 ${state.selectedType === type ? "bg-indigo-800 text-white" : "bg-[#11192a] text-gray-200"}`}
             onClick={() => handleFilter(type)}
           >
             {getTypeLabel(type)}

@@ -105,7 +105,7 @@ function HeroSection() {
             className="[animation:updown_1.5s_ease-in-out_infinite]"
             style={{ animationDelay: `-${delay}s` }}
           >
-            <span className="block w-[6.5vw] h-[6.5vw] border-b-[7px] border-r-[7px] border-[#7735dc81] rotate-45 mb-[-10px]"></span>
+            <span className="block w-[6.5vw] h-[6.5vw] lg:w-[3.5vw] lg:h-[3.5vw] border-b-[7px] border-r-[7px] border-[#7735dc81] rotate-45 mb-[-10px]"></span>
           </div>
         ))}
       </motion.div>
